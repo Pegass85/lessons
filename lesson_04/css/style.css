@@ -1,0 +1,92 @@
+@import url("reset.css"); 
+
+*{
+   /* color: aquamarine;*/
+}
+
+
+p{
+    /*color: brown;*/
+}
+ h2{
+    color: aquamarine;
+ }
+.title{
+   /* color: green;*/
+}
+[class*="te"]{
+    /*color: aqua;*/
+}
+[title*="укр"]{
+    color: violet;
+}
+.title,
+.text,
+li {
+    color: chocolate;
+}
+.article h2 {
+    color: royalblue;
+}
+.article p {
+   /* color: orchid;*/
+}
+.lesson > p {
+   /* color: red; */
+}
+
+.title {
+    color: blue;
+}
+.title {
+    color: brown;
+}
+
+.text {
+    /*color: orange;*/
+}
+* {
+    /*color: blueviolet;*/
+}
+p{
+    /*color: green;*/
+}
+#some-id {
+    color: yellowgreen;
+}
+/*
+p.text {
+    color: blue;
+}
+.text {
+    color: brown;
+}
+p {
+    color: green;
+}
+ */
+
+
+
+ul > li {
+    color: red;
+}
+ul > li ~ li {
+    color: green;
+}
+ul > li > ul > li {
+    color: blue;
+}
+ul > li > ul > li ~ li {
+    color: orange;
+}
+
+ul > li > ul > li > ol > li ~ li {
+color: #5d5d5d;
+}
+ul > li > ul > li > ol > li {
+    color: #4597f7;
+}
+ul > li > ul > li > span {
+    color: #a0f0fc;
+}
