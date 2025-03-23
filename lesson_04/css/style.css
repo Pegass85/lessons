@@ -1,92 +1,68 @@
-@import url("reset.css"); 
-
-*{
-   /* color: aquamarine;*/
+@import url("fonts.css");
+/*@import url("reset.css");*/
+body {
+    font-family: "Lexend", serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.37;
 }
 
-
-p{
-    /*color: brown;*/
-}
- h2{
-    color: aquamarine;
- }
-.title{
-   /* color: green;*/
-}
-[class*="te"]{
-    /*color: aqua;*/
-}
-[title*="укр"]{
-    color: violet;
-}
-.title,
-.text,
-li {
-    color: chocolate;
-}
-.article h2 {
-    color: royalblue;
-}
-.article p {
-   /* color: orchid;*/
-}
-.lesson > p {
-   /* color: red; */
+body {
+    /*font-family: "KoPubBatang", serif;
+    font-weight: 300;*/
 }
 
 .title {
-    color: blue;
+    font-family: "KoPubBatang", serif;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 900;
+    color: rgb(14, 67, 27);
+    text-align: center;
+    text-shadow: 5px 8px 6px #6af00a,
+     8px -6px  red ;
 }
-.title {
-    color: brown;
+
+.headline {
+    font-family: "KoPubBatang", serif;
+    font-size: 30px;
+    color: blueviolet;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.subtitle {
+    font-family: "Lexend", serif;
+    font-size: 16px;
+    color: blue;
+    text-decoration: underline;
+    text-decoration-color: burlywood;
+    text-decoration-style: wavy;
+    letter-spacing: 14px;
+}
+
+.link {
+    font-family: "KoPubBatang", serif;
+    font-style: italic;
+    font-size: medium;
+}
+
+.control {
+    text-transform: uppercase;
+}
+
+.caption {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #1A1A1A;
 }
 
 .text {
-    /*color: orange;*/
-}
-* {
-    /*color: blueviolet;*/
-}
-p{
-    /*color: green;*/
-}
-#some-id {
-    color: yellowgreen;
-}
-/*
-p.text {
-    color: blue;
-}
-.text {
-    color: brown;
-}
-p {
-    color: green;
-}
- */
-
-
-
-ul > li {
-    color: red;
-}
-ul > li ~ li {
-    color: green;
-}
-ul > li > ul > li {
-    color: blue;
-}
-ul > li > ul > li ~ li {
-    color: orange;
-}
-
-ul > li > ul > li > ol > li ~ li {
-color: #5d5d5d;
-}
-ul > li > ul > li > ol > li {
-    color: #4597f7;
-}
-ul > li > ul > li > span {
-    color: #a0f0fc;
+   font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5; 
+    color: #808080;
 }
