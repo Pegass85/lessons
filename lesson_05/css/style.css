@@ -1,0 +1,256 @@
+
+@import url("reset.css");
+@import url("fonts.css");
+
+.headline{
+    text-align: center;
+     margin-bottom: 20px;
+     color: chartreuse;
+}
+
+.title{
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #5A54F2;
+}
+
+.advantages {
+    font-family: "CircularStd", sans-serif;
+    font-size: 14px;
+    background-color: #231F8B;
+    color: #ffffff;
+    padding: 50px 0px;
+    margin-bottom: 20px;
+    
+}
+
+.advantages-container {
+    max-width: 1080px;
+	margin: 0 auto;
+	padding: 0px 15px;
+      
+}
+
+.advantages-description {
+    font-family: "Montserrat", sans-serif;
+    color: #5a54f2;
+	font-weight: 700;
+	line-height: 1.7;
+	letter-spacing: 0.2px;
+	margin-bottom: 10px;
+}
+
+.advantages-title {
+    font-size: 36px;
+    margin-bottom: 10px;
+    
+}
+
+.advantages-text {
+    line-height: 1.4; 
+    letter-spacing: 0.2px;
+     margin-bottom: 70px;
+}
+
+
+
+.cards {
+    font-size: 0;
+    margin-left: -20px;
+}
+
+
+.cards-item {
+    display: inline-block;
+    vertical-align: top;
+	font-size: 14px;
+	width: 25%;
+	padding: 0px 20px;
+    box-sizing: border-box;
+    
+    
+}
+
+.card-content {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    min-height: 320px;
+    box-sizing: border-box;
+   
+    
+}
+
+.icon {
+    max-width: 72px;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.card-title {
+    color: #252B42;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5; 
+    letter-spacing: 0.1px;
+    margin-bottom: 20px;
+  
+}
+
+.card-text {
+    color: #737373;
+	font-weight: 500;
+	line-height: 1.4;
+	letter-spacing: 0.2px;
+}
+
+
+.line-decoration {
+    display: inline-block;
+	width: 50px;
+	height: 2px;
+	background-color: #e74040;
+	margin-bottom: 20px;
+}
+
+.card-accent .line-decoration {
+	background-color: #fff;
+}
+
+
+
+.card-accent {
+    background-color: #5A54F2;
+    padding: 20px;
+    margin-bottom: 20px;
+    min-height: 320px;
+    box-sizing: border-box;
+}    
+
+.card-accent .card-text,
+.card-accent .card-title {
+    color: #fff;
+}
+
+.card-low {
+    margin-top: 30px;
+}
+
+.card-top {
+    margin-top: 0px;
+}
+
+ 
+
+.inline {
+    background: #e18f0a;
+}
+
+.block {
+    background: #09880e;
+    /*padding: 20px;*/
+    /*padding: 20px 50px;*/
+    /*padding: 20px 30px 40px;*/
+    /*padding: 20px 5px 30px 40px;*/
+    
+    /*padding-top: 20px;
+    padding-right: 5px;
+    padding-bottom: 30px;
+    padding-left: 40px;*/
+
+    /*padding-left: 20%;
+    padding-top: 10%;*/
+
+    /*margin: 50px;*/
+    /*margin: 10px 30px;*/
+    /*margin-left: -40px;
+    margin-top: 20px;*/
+    /*margin: 30%;*/
+    margin-bottom: 40px;
+    padding: 20px;
+    /*width: 150px;*/
+    /*max-width: 300px;*/
+    /*min-width: 200px;*/
+    height: 60px;
+    /*overflow: hidden;*/
+    overflow: auto;
+    /*overflow: scroll;*/
+
+}
+
+.block-2 {
+    white-space: nowrap;
+    overflow: auto;
+    background: #5173e4;
+    /*margin-top: 30px;
+    margin-bottom: 30px;*/
+}
+
+.block p {
+    margin-bottom: 50px;
+    /*padding: 20px;
+    margin-bottom: 30px;*/
+
+}
+
+
+.inline {
+    /*padding-left: 40px;
+    padding-right: 40px;*/
+    /*line-height: 0px;*/
+   /*margin-top: 40px;
+    margin-bottom: 40px;*/
+    /*width: 300px;
+    display: block;*/
+    display: inline-block;
+    vertical-align: top;
+    width: 300px;
+
+}
+
+.inline-block {
+    /*margin-top: 10px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 50px;*/
+    width: 200px;
+    /*vertical-align: middle;*/
+    /*vertical-align: bottom;*/
+
+}
+
+
+.section {
+	max-width: 500px;
+	margin: 0 auto;
+	overflow: hidden;
+	background-color: #794f45;
+}
+	
+.items {
+	margin-left: -5px;
+	margin-right: -5px;
+	font-size: 0;
+    
+}
+.item {
+	width: 33.333%;
+	display: inline-block;
+	margin-bottom: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+	vertical-align: top;
+    
+    
+}
+
+.content {
+	font-size: 18px;
+	background-color: #7a956b;
+	padding: 25px;
+    text-align: center;
+    word-break: break-word; 
+    
+}
+
