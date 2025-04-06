@@ -45,14 +45,17 @@
 .link:active {
     color: rgb(200, 53, 141);
 }
-
+/* 
 .link:visited {
-   /* color: rgb(91, 185, 185);*/
+    color: rgb(91, 185, 185);
 }
+*/
 
+/*
 .link:focus {
-    /*color: black;*/
+    color: black;
 }
+*/
 
 .link:focus-visible {
     /*color: rgb(182, 15, 15);*/
@@ -179,9 +182,11 @@ background-color: #412672;
     content: "oooo";
 }
 
+/*
 .list {
 
 }
+*/
 
 
 .list_item {
@@ -220,66 +225,105 @@ color: #000;
 
 /*Гра*/
 
-body {
-  font-family: "Inter", sans-serif;
-  background-color: #fff;
-  color: #000;
-  padding: 50px;
-  margin: 0;
-}
+
 
 .h1 {
   font-size: 32px;
   text-align: center;
-  color: #fff;
+  color: #100f0f;
   margin-bottom: 30px;
 }
 
 .game {
+  background-color: #412672;
+  padding: 100px 0;
+  font-size: 0;
+  min-height: 800px;
+  
+}
+
+.game_content > div{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.block-start{
+  min-width: 70px;
+  min-height: 50px;
   background-color: #fff;
-  padding: 30px;
-  border-radius: 10px;
-  display: inline-block;
-}
-
-.step {
-  display: none;
-  margin-top: 10px;
-}
-
-/* показ наступного кроку */
-.block:hover + .step {
-  display: block;
-}
-
-/* перший step завжди видимий */
-.game > .step {
-  display: block;
-}
-
-/* стилі блоків */
-.block {
-  background-color: #f4f4f4;
-  padding: 15px 25px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  font-weight: bold;
-  display: inline-block;
-  margin: 5px;
-  min-width: 60px;
+  padding:15px 0;
   text-align: center;
+  font-size: 20px;
 }
 
-.block:hover {
-  background-color: #a0e3a0;
+.game_content > div:hover + div, .game_content>div:hover{
+  visibility: visible;
 }
 
-.block-end {
-  background-color: #4caf50;
-  color: white;
-  text-align: center;
+.game_content>div:hover:not(.block-end):not(.block-start){
+  background-color: #f48942;
 }
+
+[class*='block']:not(:first-child){
+  background-color: #2fc646;
+  visibility: hidden;
+}
+
+.block-1{
+  margin-left: -2px;
+  min-width: 200px;
+  min-height: 45px;
+
+}
+
+.block-2{
+  margin: 0 0 -144px -10px ;
+  min-width: 10px;
+  min-height: 110px;
+
+}
+
+.block-3{
+  margin: 0 0 -235px -2px ;
+  min-width: 300px;
+  min-height: 20px;
+}
+
+.block-4{
+  margin: 0 0 -364px -2px ;
+  min-width: 20px;
+  min-height: 150px;
+}
+
+.block-5{
+  margin: 0 0 -505px -301px ;
+  min-width: 300px;
+  min-height: 10px;
+}
+
+.block-6{
+  margin: 0 0 -647px -301px ;
+  min-width: 25px;
+  min-height: 150px;
+}
+
+
+.block-end{
+  margin: 0 0 -794px -3px ;
+  width: 100px;
+  height: 100px;
+  
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.block-end:hover{
+  background-color: #28703f;
+}
+
 
 /*Блок з макету Business*/
 
