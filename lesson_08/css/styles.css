@@ -1,0 +1,15 @@
+@import url("reset.css");
+
+.header {
+  background-color: purple;
+  color: rgb(45, 233, 45);        
+  font-weight: 900;
+  font-size: 36px;
+  padding: 20px 40px;      
+  width: fit-content;       
+  margin: 20px auto;        
+  border-radius: 20px; 
+  text-align: center;    
+}
+
+
