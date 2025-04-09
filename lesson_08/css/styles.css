@@ -1,15 +1,99 @@
 @import url("reset.css");
 
 .header {
-  background-color: purple;
-  color: rgb(45, 233, 45);        
+  background-color: #754bea;
+  color: rgb(57, 218, 180);        
   font-weight: 900;
   font-size: 36px;
   padding: 20px 40px;      
   width: fit-content;       
   margin: 20px auto;        
   border-radius: 20px; 
-  text-align: center;    
+  text-align: center; 
+  margin-bottom: 50px;   
+}
+
+body {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  background: linear-gradient(to right, #754bea, #6cf8d1);
+  min-height: 100vh;
+  margin: 0;
+  
+}
+
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.banner p,
+.image-feedback p,
+.image-content p {
+  margin-top: 15px; 
 }
 
 
+.icon-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin: 30px auto;
+  width: max-content; 
+  text-align: left;
+}
+
+.icon-list li {
+  margin-bottom: 30px;
+  white-space: nowrap; 
+}
+
+.icon-list img.icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 50px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.icon-list p {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  font-weight: 400;
+}
+
+.banner {
+    margin-bottom: 30px;
+}
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+  overflow: clip;
+  box-shadow: 0 0 10px rgba(76, 9, 93, 0.6);
+  border-radius: 20px;
+}
+
+.image-feedback img {
+    border-radius: 27% 0%;
+    margin-bottom: 30px;
+}
+
+.image-content {
+    margin-top: 20px;
+}
+
+.logo {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 10px;
+  
+}
+
+.logo:hover {
+  background-color:#754bea; 
+  box-shadow: 0 0 10px rgba(76, 9, 93, 0.6);
+}
