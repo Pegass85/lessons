@@ -1,0 +1,36 @@
+.image-wrapper {
+  position: relative;
+  display: inline-block;
+ 
+}
+
+.image-wrapper::before {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border: 3px solid orange;
+  border-radius: 50%;
+  top: -20px;
+  left: -20px;
+  z-index: -1;
+}
+
+.image-wrapper::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: limegreen;
+  top: 80%;
+  left: -30px;
+  box-shadow:
+    10px 0 limegreen,
+    20px 0 limegreen,
+    30px 0 limegreen,
+    0 -10px limegreen,
+    10px -10px limegreen,
+    20px -10px limegreen,
+    30px -10px limegreen;
+  z-index: -1;
+}
