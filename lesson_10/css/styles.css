@@ -4,7 +4,6 @@
 
 .wrapper {
 	overflow: clip;
-	min-height: 100%;
 }
 
 .header {
@@ -126,11 +125,10 @@
 
 /* Section-business*/
 
+
 .business {
 	position: relative;
-	margin-top: -70px;
-	margin-bottom: -30px;
-    background-color: #5A54F2;
+	background-color: #5A54F2;
 	color: #FFF;
 	font-family: "Roboto", sans-serif;
 	font-size: 18px;
@@ -138,7 +136,10 @@
 }
 
 .business__container {
-	max-width: 1260px;
+	max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
 }
 
 .business__body>*:not(:last-child) {
@@ -147,10 +148,7 @@
 
 .business__row {
 	font-size: 0;
-}
-
-.business__row:nth-child(even) {
-	padding-left: 250px;
+    position: relative;
 }
 
 .business__row>* {
@@ -166,6 +164,7 @@
 	position: relative;
 	max-width: 430px;
 	height: 548px;
+    z-index: 2;
 }
 
 .business__row:nth-child(odd) .business__img::before {
@@ -175,7 +174,6 @@
 	right: 137px;
 	width: 421px;
 	height: 722px;
-	z-index: -1;/*разобраться с инексом, чтобі круг и точки біли на фоне,но под фото*/
 	background: url("../img/ellipse_small.svg") 0 0 / 65px no-repeat, url("../img/ellipse_big.svg") 20px 45px / 401px no-repeat, url("../img/group_ellipse_small_vertical.svg") 33px 249px / 214px 472px no-repeat;
 }
 
@@ -190,7 +188,6 @@
 	left: 141px;
 	width: 472px;
 	height: 430px;
-	z-index: -1;
 	background: url("../img/ellipse_medium.svg") 156px 0 / 262px no-repeat, url("../img/group_ellipse_smal.svg") left bottom / 472px 214px no-repeat;
 }
 
@@ -204,9 +201,16 @@
 	background: url("../img/ellipse_small.svg") 0 0 / 65px no-repeat;
 }
 
+.business__row:nth-child(odd) .business__img::before,
+.business__row:nth-child(even) .business__img::before,
+.business__row:nth-child(even) .business__img::after {
+    z-index: -1; 
+}
+
+
 .business__img img {
 	width: 100%;
-	height: 100%;
+	height: 100%;    
 }
 
 .business__inner-img {
@@ -225,6 +229,14 @@
 .business__row:nth-child(even) .business__content {
 	max-width: 480px;
 	padding-top: 30px;
+}
+
+.business__row:nth-child(1) .business__img {
+	margin-left: -180px; 
+}
+
+.business__row:nth-child(2) .business__img {
+	margin-left: 180px; 
 }
 
 .business__info {
