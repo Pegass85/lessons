@@ -1,5 +1,7 @@
 @import url("reset.css");
 
+@import url("fonts.css");
+
 .wrapper {
 	overflow: clip;
 	min-height: 100%;
@@ -15,6 +17,7 @@
     font-size: 36px;
     color: green;
     text-align: center;
+    margin-top: 30px;
 }
 
 /* Section-card*/
@@ -41,19 +44,33 @@
 
 .card:hover {
 	box-shadow: 0px 0px 12px 0px rgba(32, 181, 38, 0.32);
-     border: 1px solid var(--Branding-Success-Dark, #2C742F);
+    border: 1px solid var(--Branding-Success-Dark, #2C742F);
     background: var(--Gray-Scale-White, #FFF);
-
+    
 }
 
-.card:hover .card__icon {
+.card__icons {
+	position: absolute;
+    top: 20px;
+    right: 20px;
+    display: block;
+    opacity: 0;   
+}
+
+.card:hover .card__icons {
 	opacity: 1;
-	overflow: visible;
 }
 
 .card__icon {
-	opacity: 0;
-	overflow: hidden;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 50%;
+    margin-bottom: 6px;    
+}
+
+.card__icon:hover {
+    background-color: #2C742F;   
 }
 
 .card__image {
@@ -65,40 +82,6 @@
 .card__image a {
 	width: 100%;
 	height: 100%;
-}
-
-.card__icons-heart {
-    width: 40px;
-	height: 40px;
-	padding: 10px;
-	border-radius: 50%;
-	display: block;
-	top: 4.9%;
-	right: 4.2%;
-	position: absolute;
-	
-}
-
-.card__icons-heart:hover {
-    background-color: #2C742F;
-	border: none;
-}
-
-.card__icons-eye {
-    width: 40px;
-	height: 40px;
-	padding: 10px;
-	border-radius: 50%;
-	display: block;
-	top: 19%;
-	right: 4.2%;
-	position: absolute;
-	
-}
-
-.card__icons-eye:hover {
-    background-color: #2C742F;
-	border: none;
 }
 
 .card__item {
@@ -130,11 +113,11 @@
 	height: 40px;
 	padding: 10px;
 	border-radius: 50%;
-	background-color: #F2F2F2;
 	display: block;
 	bottom: 10%;
 	right: 4.2%;
 	position: absolute;
+    right: 20px;
 }
 
 .card__shopping:hover {
@@ -143,3 +126,139 @@
 
 /* Section-business*/
 
+.business {
+	position: relative;
+	margin-top: -70px;
+	margin-bottom: -30px;
+    background-color: #5A54F2;
+	color: #FFF;
+	font-family: "Roboto", sans-serif;
+	font-size: 18px;
+	line-height: 1.66667;
+}
+
+.business__container {
+	max-width: 1260px;
+}
+
+.business__body>*:not(:last-child) {
+	margin-bottom: 55px;
+}
+
+.business__row {
+	font-size: 0;
+}
+
+.business__row:nth-child(even) {
+	padding-left: 250px;
+}
+
+.business__row>* {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.business__row>*:not(:last-child) {
+	margin-right: 70px;
+}
+
+.business__img {
+	position: relative;
+	max-width: 430px;
+	height: 548px;
+}
+
+.business__row:nth-child(odd) .business__img::before {
+	content: "";
+	position: absolute;
+	top: 168px;
+	right: 137px;
+	width: 421px;
+	height: 722px;
+	z-index: -1;/*разобраться с инексом, чтобі круг и точки біли на фоне,но под фото*/
+	background: url("../img/ellipse_small.svg") 0 0 / 65px no-repeat, url("../img/ellipse_big.svg") 20px 45px / 401px no-repeat, url("../img/group_ellipse_small_vertical.svg") 33px 249px / 214px 472px no-repeat;
+}
+
+.business__row:nth-child(even) .business__img {
+	box-shadow: 22px 42px 44px 0px rgba(0, 0, 0, 0.30);
+}
+
+.business__row:nth-child(even) .business__img::before {
+	content: "";
+	position: absolute;
+	bottom: 144px;
+	left: 141px;
+	width: 472px;
+	height: 430px;
+	z-index: -1;
+	background: url("../img/ellipse_medium.svg") 156px 0 / 262px no-repeat, url("../img/group_ellipse_smal.svg") left bottom / 472px 214px no-repeat;
+}
+
+.business__row:nth-child(even) .business__img::after {
+	content: "";
+	position: absolute;
+	top: -48px;
+	left: 92px;
+	width: 65px;
+	height: 65px;
+	background: url("../img/ellipse_small.svg") 0 0 / 65px no-repeat;
+}
+
+.business__img img {
+	width: 100%;
+	height: 100%;
+}
+
+.business__inner-img {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	border-radius: 20px;
+	box-shadow: -25px 20px 44px 0px rgba(84, 48, 209, 0.40);
+}
+
+.business__content {
+	max-width: 602px;
+	padding-top: 138px;
+}
+
+.business__row:nth-child(even) .business__content {
+	max-width: 480px;
+	padding-top: 30px;
+}
+
+.business__info {
+	margin-bottom: 40px;
+}
+
+.business__info>*:not(:last-child) {
+	margin-bottom: 13px;
+}
+
+.business__title {
+	font-family: "Circular Std", sans-serif;
+	font-size: 36px;
+	font-weight: 700;
+}
+
+.business__text {
+	font-size: 18px;
+}
+
+.business__text>*:not(:last-child) {
+	margin-bottom: 9px;
+}
+
+.business__link {
+	text-align: center;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 1.16666667;
+	padding: 21.5px 26px;
+	border-radius: 60px;
+	background: #F35B09;
+}
+
+.business__link:hover {
+	background: #da520a;
+}
