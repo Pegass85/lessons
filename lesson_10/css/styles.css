@@ -3,13 +3,24 @@
 @import url("fonts.css");
 
 .wrapper {
+    width: 100%;
 	overflow: clip;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
 }
 
 .header {
     font-size: 36px;
     color: green;
     text-align: center;
+}
+
+div {
+    display: block;
+    unicode-bidi: isolate;
 }
 
 .footer {
@@ -133,6 +144,7 @@
 	font-family: "Roboto", sans-serif;
 	font-size: 18px;
 	line-height: 1.66667;
+    margin-top: 50px;
 }
 
 .business__container {
