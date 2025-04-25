@@ -1,0 +1,166 @@
+@import url("reset.css");
+
+.wrapper {
+   min-height: 100%;
+   overflow: clip;
+}
+
+.header {
+    font-size: 36px;
+    color: rgb(192, 7, 180);
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.page {
+   position: relative;
+}
+
+.content {
+    padding: 40px 0;
+}
+
+.content__container {
+   max-width: 1320px;
+   padding: 0 15px;
+   margin: 0 auto;
+}
+
+.content__row {
+    font-size: 0;
+    margin: 0 -15px;
+}
+
+.content__card {
+    display: inline-block;
+    width: 25%;
+    height: 300px;
+    padding: 15px;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    background-color: #c3f6778f;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.card__item {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(194, 46, 192);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+
+.card__title {
+    padding: 10px 0;
+    font-size: 20px;
+    color: #16430f;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/*transform 2D*/
+
+.content__card:nth-child(1) .card:hover .card__item {
+   transform: translate(-50%, -80px);
+   box-shadow: 0 -20px 5px #631053;
+}
+.content__card:nth-child(2) .card:hover .card__item {
+   transform: translate(-50%, -50%) scale(2);
+}
+.content__card:nth-child(3) .card:hover .card__item {
+   transform: translate(-50%, -50%) rotate(45deg);
+}
+.content__card:nth-child(4) .card__item {
+   transform-origin: top;
+}
+.content__card:nth-child(4) .card:hover .card__item {
+   transform: translate(-50%, -50%) rotate(360deg);
+   transition: 1s;
+}
+.content__card:nth-child(5) .card:hover .card__item {
+   transform: translate(-50%, -50%) skew(-45deg, 10deg);
+}
+
+/*transform 3D*/
+
+.card--3d {
+   perspective: 100px;
+   transform-style: preserve-3d;
+}
+
+.content__card:nth-child(6) .card:hover .card__item {
+   transform: matrix(0.5, 0.1, 0.1, 0.5, 10, 15);
+}
+
+.content__card:nth-child(7) .card:hover .card__item {
+   transform: translate(-50%, -50%) translate3d(0, 20px, 40px);
+   box-shadow: 0 -20px 5px #631053;
+}
+.content__card:nth-child(8) .card:hover .card__item {
+   transform: translate(-50%, -50%) rotate3d(1, 1, 1, 45deg);
+   box-shadow: 0 20px 5px #631053;
+}
+
+/*flipper*/
+
+.wish-card-container {
+  perspective: 1000px;
+  width: 300px;
+  height: 200px;
+  margin: 20px;
+}
+
+.wish-card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.wish-card-container:hover .wish-card {
+  transform: rotateY(180deg);
+}
+
+.wish-card-front,
+.wish-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(86, 28, 79, 0.869);
+}
+
+.wish-card-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.wish-card-back {
+  background: linear-gradient(135deg, #e53ac3, #c3f677);
+  color: #380d33;
+  transform: rotateY(180deg);
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 2;
+}
+
