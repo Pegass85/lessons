@@ -13,6 +13,12 @@
     margin-bottom: 30px;
 }
 
+.footer{
+    font-size: 36px;
+    color: rgb(192, 7, 180);
+    text-align: center;
+}
+
 div {
     display: block;
     unicode-bidi: isolate;
@@ -42,6 +48,7 @@ div {
     width: 25%;
     height: 300px;
     padding: 15px;
+    margin-bottom: 40px;
 }
 
 .card {
@@ -120,26 +127,27 @@ div {
 
 /*flipper*/
 
-.wish-card-container {
+.wish_card-container {
   perspective: 1000px;
   width: 300px;
   height: 200px;
-  margin: 20px;
+  margin: 0 auto;
+  margin-bottom: 40px;
 }
 
-.wish-card {
+.wish_card {
   width: 100%;
   height: 100%;
   position: relative;
   transform-style: preserve-3d;
 }
 
-.wish-card-container:hover .wish-card {
+.wish_card-container:hover .wish_card {
   transform: rotateY(180deg);
 }
 
-.wish-card-front,
-.wish-card-back {
+.wish_card__front,
+.wish_card__back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -149,13 +157,13 @@ div {
   box-shadow: 0 4px 10px rgba(86, 28, 79, 0.869);
 }
 
-.wish-card-front img {
+.wish_card__front img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.wish-card-back {
+.wish_card__back {
   background: linear-gradient(135deg, #e53ac3, #c3f677);
   color: #380d33;
   transform: rotateY(180deg);
@@ -163,5 +171,114 @@ div {
   text-align: center;
   font-size: 20px;
   line-height: 2;
+}
+
+/*rocket*/
+
+.picture {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/galaxy-panorama.avif) center center / cover no-repeat;
+    overflow: hidden;
+}
+
+.moon {
+    position: absolute;
+    top: 150px;
+    right: 50px;
+    width: 220px;
+}
+
+.moon img {
+    width: 100%;
+    height: auto;
+}
+
+.rocket {
+    position: absolute;
+    bottom: -350px;
+    left: 50%;
+    transform: translateX(10%) rotate(45deg);
+    width: 100px;
+    height: 305px;
+    position: relative;
+}
+
+.rocket__body {
+    position: absolute;
+    top: 57px; 
+    left: 0;
+    width: 100px;
+    height: 250px;
+    background: linear-gradient(180deg, #e9e9ec 50%, #a6a6bf 100%);
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 0 10px rgba(255,255,255,0.2);
+    border: 2px solid #000;
+}
+
+.rocket__tip {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid #d4d4f4;
+    z-index: 2;
+}
+
+.rocket__tip::before {
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: -25px;
+    width: 50px;
+    height: 50px;
+    background-color: #4949a9;
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    z-index: -1;
+}
+
+.rocket__window {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background: rgb(63, 63, 143);
+    border-radius: 50%;
+    border: 2px solid #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    }
+
+.window1 {
+  top: 30px;
+}
+
+.window2 {
+  top: 80px;
+  background-image: url("../img/cartoon-frog.avif"); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.window3 {
+  top: 130px;
+}
+
+.rocket__flame {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 50px;
+    background: rgb(234, 125, 16);
+    border: 2px solid #f8420b;
+    border-radius: 50% 50% 0 0;
+    z-index: 0;
 }
 
