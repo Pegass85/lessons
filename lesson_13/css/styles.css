@@ -17,6 +17,7 @@ body {
   text-align: center;
   padding: 30px 0;
   text-transform: uppercase;
+  margin-bottom: 40px;
 }
 
 .footer {
@@ -25,4 +26,103 @@ body {
   box-shadow: 0 -4px 10px rgba(106, 14, 120, 0.609);
   text-align: center;
   padding: 30px 0;
+}
+
+.container {
+  width: 100%;
+}
+
+.reviews {
+  background-color: #412672;
+}
+
+.reviews__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+  padding: 60px 263px;
+}
+
+.reviews__header {
+  max-width: 100%;
+  flex-shrink: 0;
+  margin-left: 86px;
+}
+
+.title {
+  color: #fff;
+  font-size: 38px;
+  font-weight: 400;
+}
+
+.title__part {
+  display: block;
+}
+
+.title__part--light {
+  font-weight: 300;
+}
+
+.title__part--bold {
+  font-weight: 700;
+}
+
+.cards {
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 387px;
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 476px;
+  transition: background-color 0.3s ease;
+}
+
+.card:hover {
+  background-color: #FFBE48;
+}
+
+.card > *{
+  margin-bottom: 16px;
+  
+}
+
+.card img {
+  width: 347px;
+  height: 266px;
+}
+
+.card__label {
+  font-size: 22px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #000;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.card__label:hover {
+  color: #412672;
+}
+
+.card__text {
+  flex-grow: 1;
+}
+
+.link {
+  color: #FE3F3F;
+}
+
+.link:hover {
+  color: #eb0f0f;
+  text-decoration: underline;
 }
