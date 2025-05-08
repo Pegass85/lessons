@@ -8,6 +8,12 @@ body {
 .wrapper {
   min-height: 100%;
   overflow: clip;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper > main {
+  flex-grow: 1;
 }
 
 .header {
@@ -31,6 +37,9 @@ body {
 .container {
   width: 100%;
 }
+
+
+/*Блок відгуки*/
 
 .reviews {
   background-color: #412672;
@@ -60,7 +69,7 @@ body {
 }
 
 .title__part--light {
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .title__part--bold {
@@ -106,8 +115,11 @@ body {
   font-weight: 600;
   text-decoration: none;
   color: #000;
-  display: inline-block;
+  display: inline;
   transition: color 0.3s ease;
+  line-height: normal;
+  width: auto;
+  max-width: max-content;
 }
 
 .card__label:hover {
@@ -120,9 +132,91 @@ body {
 
 .link {
   color: #FE3F3F;
+  display: inline;
+  padding: 0;
+  margin: 0;
+  line-height: normal;
+  width: auto;
+  max-width: max-content;
 }
 
 .link:hover {
   color: #eb0f0f;
   text-decoration: underline;
 }
+
+
+/*Інформаційним промо-блоком*/
+
+
+.hero-promo__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 153px;
+  margin-bottom: 137px;
+  padding-left: 264px;
+  padding-right: 92px;
+  gap: 90px; 
+}
+
+.hero-promo__content {
+  max-width: 600px;
+}
+
+.hero-promo__image img {
+  max-width: 100%;
+  height: 521px;
+  display: block;
+}
+
+
+.hero-promo__header {
+  font-size: 34px;
+  max-width: 100%;
+  flex-shrink: 0;
+  color: #412672;
+  margin-bottom: 20px;
+}
+
+.hero-promo__title--light {
+  font-weight: 400;
+}
+
+.hero-promo__title--bold{
+  font-weight: 700;
+}
+
+.hero-promo__text {
+  font-size: 22px;
+  font-weight: 400;
+  color: #412672;
+  margin-bottom: 20px;
+}
+
+.hero-promo__list {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 15px; 
+}
+
+.hero-promo__list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #4F4F4F;
+}
+
+.hero-promo__list li::before {
+  content: "";
+  align-self: flex-start;
+  background: url("../img/check.svg") 0 0 / 100% no-repeat;
+  width: 29px;
+  height: 29px;
+  flex-shrink: 0;
+}
+
+
+/*Блок переваги*/
