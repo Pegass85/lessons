@@ -131,6 +131,7 @@ body {
 
 .card__text {
   flex-grow: 1;
+  color: #4F4F4F;
 }
 
 .link {
