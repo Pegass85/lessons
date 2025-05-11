@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson 14</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <h1 class="header__title">Lesson 14 - форми</h1>
+            </div>
+        </header>
+
+        <main class="page">
+            <div class="page__container">
+                <div class="checkout">
+                    <div class="checkout__form-section">
+                        <h2 class="checkout__heading">Billing Information</h2>
+                        <div class="checkout__row">
+                            <label for="first-name">
+                                <span>First name</span>
+                                <input id="first-name" class="checkout__input" type="text"
+                                    placeholder="Your first name">
+                            </label>
+                            <label for="last-name">
+                                <span>Last name</span>
+                                <input id="last-name" class="checkout__input" type="text" placeholder="Your last name">
+                            </label>
+                            <label for="company-name">
+                                <span>Company name</span>
+                                <input id="company-name" class="checkout__input" type="text" placeholder="Company name">
+                            </label>
+                        </div>
+                        <label for="street-address" class="checkout__input--full">
+                            <span>Street Address</span>
+                            <input id="street-address" class="checkout__input checkout__input--full" type="text"
+                                placeholder="Street Address">
+                        </label>
+                        <div class="checkout__row">
+                            <label for="country">
+                                <span>Country</span>
+                                <input id="country" class="checkout__input" type="text" placeholder="Select Country">
+                            </label>
+                            <label for="state">
+                                <span>State</span>
+                                <input id="state" class="checkout__input" type="text" placeholder="States">
+                            </label>
+                            <label for="zip-code">
+                                <span>Zip Code</span>
+                                <input id="zip-code" class="checkout__input" type="text" placeholder="Zip Code">
+                            </label>
+                        </div>
+                        <div class="checkout__row">
+                            <label for="email">
+                                <span>Email</span>
+                                <input id="email" class="checkout__input" type="email" placeholder="Email Address">
+                            </label>
+                            <label for="phone">
+                                <span>Phone</span>
+                                <input id="phone" class="checkout__input" type="tel" placeholder="Phone number">
+                            </label>
+                        </div>
+                        <div class="checkout__checkbox">
+                            <input type="checkbox" id="different-address">
+                            <label for="different-address">Ship to a different address</label>
+                        </div>
+
+                        <h2 class="checkout__heading">Additional Info</h2>
+                        <label for="order-notes">
+                            <span>Order Notes</span>
+                            <textarea id="order-notes" class="checkout__textarea"
+                                placeholder="Notes about your order, e.g. special notes for delivery"></textarea>
+                        </label>
+                    </div>
+
+                    <div class="checkout__summary-section">
+                        <h3 class="checkout__heading">Order Summary</h3>
+                        <ul class="checkout__list">
+                            <li class="checkout__item">
+                                <span><img src="img/peperone_green.jpg" alt="Green Capsicum">Green Capsicum x5</span>
+                                <span>$70.00</span>
+                            </li>
+                            <li class="checkout__item">
+                                <span><img src="img/peperone_red.jpg" alt="Red Capsicum">Red Capsicum x1</span>
+                                <span>$14.00</span>
+                            </li>
+                            <li class="checkout__item checkout__item--subtotal">
+                                <span>Subtotal:</span>
+                                <span>$84.00</span>
+                            </li>
+                            <li class="checkout__item checkout__item--shipping">
+                                <span>Shipping:</span>
+                                <span>Free</span>
+                            </li>
+                            <li class="checkout__item checkout__item--total">
+                                <span>Total:</span>
+                                <strong>$84.00</strong>
+                            </li>
+                        </ul>
+
+                        <h4 class="checkout__heading">Payment Method</h4>
+                        <div class="checkout__payments">
+                            <label class="checkout__radio">
+                                <input type="radio" name="payment" checked>
+                                <span>Cash on Delivery</span>
+                            </label>
+                            <label class="checkout__radio">
+                                <input type="radio" name="payment">
+                                <span>Paypal</span>
+                            </label>
+                            <label class="checkout__radio">
+                                <input type="radio" name="payment">
+                                <span>Amazon Pay</span>
+                            </label>
+                        </div>
+
+                        <button class="checkout__button">Place Order</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__container">Thanks for viewing</div>
+        </footer>
+    </div>
+</body>
+
+</html>
