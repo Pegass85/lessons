@@ -99,7 +99,7 @@ body {
 }
 
 
-/* для звичайних інпутів */
+/* для звичайних input */
 .checkout__input[type="text"],
 .checkout__input[type="email"],
 .checkout__input[type="tel"] {
@@ -109,7 +109,7 @@ body {
   border-radius: 6px;
 }
 
-/* для select'ів */
+/* для select input */
 select.checkout__input {
   appearance: none;
   padding: 16px;
