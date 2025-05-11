@@ -18,22 +18,24 @@ body {
 
 .header {
   font-size: 36px;
-  color: #00b207;
-  box-shadow: 0 4px 10px rgb(26, 155, 48);
+  color: #d6efa8;
   text-align: center;
   padding: 30px 0;
   text-transform: uppercase;
   margin-bottom: 40px;
-  background-color: #d6efa8;
+  background-image: url("../img/Breadcrumbs1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
+
 
 .footer {
   font-size: 36px;
-  color: #00b207;
-  box-shadow: 0 -4px 10px rgb(26, 155, 48);
+  color: #d6efa8;
   text-align: center;
   padding: 30px 0;
-  background-color: #d6efa8;
+  background-color: #30430e;
   margin-top: 5px;
 }
 
