@@ -99,12 +99,30 @@ body {
 }
 
 
-.checkout__input {
+/* для звичайних інпутів */
+.checkout__input[type="text"],
+.checkout__input[type="email"],
+.checkout__input[type="tel"] {
   flex: 1;
   padding: 16px;
   border: 1px solid #E6E6E6;
   border-radius: 6px;
 }
+
+/* для select'ів */
+select.checkout__input {
+  appearance: none;
+  padding: 16px;
+  border: 1px solid #E6E6E6;
+  border-radius: 6px;
+  background-image: url('../img/arrow.svg');
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  background-size: 16px;
+  padding-right: 40px;
+}
+
+  
 
 .checkout__input::placeholder,
 .checkout__textarea::placeholder {

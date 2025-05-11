@@ -47,12 +47,28 @@
                         <div class="checkout__row">
                             <label for="country">
                                 <span>Country</span>
-                                <input id="country" class="checkout__input" type="text" placeholder="Select Country">
+                                <select id="country" class="checkout__input" required>
+                                    <option value="">Select Country</option>
+                                    <option value="us">United States</option>
+                                    <option value="uk">United Kingdom</option>
+                                    <option value="ua">Ukraine</option>
+                                    <option value="it">Italy</option>
+                                    <option value="de">Germany</option>
+                                </select>
                             </label>
+
                             <label for="state">
                                 <span>State</span>
-                                <input id="state" class="checkout__input" type="text" placeholder="States">
+                                <select id="state" class="checkout__input" required>
+                                    <option value="">Select State</option>
+                                    <option value="ca">California</option>
+                                    <option value="tx">Texas</option>
+                                    <option value="ny">New York</option>
+                                    <option value="wa">Washington</option>
+                                    <option value="fl">Florida</option>
+                                </select>
                             </label>
+
                             <label for="zip-code">
                                 <span>Zip Code</span>
                                 <input id="zip-code" class="checkout__input" type="text" placeholder="Zip Code">
