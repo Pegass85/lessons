@@ -177,8 +177,17 @@ select.checkout__input {
 .checkout__item img {
   width: 40px;
   height: auto;
-  margin-right: 10px;
 }
+
+.checkout__item a {
+  color: #1A1A1A;
+  text-decoration: none;
+}
+
+.checkout__item a:hover {
+  color: #00B207;
+}
+
 
 .checkout__item span:first-child {
   display: flex;
@@ -211,5 +220,88 @@ select.checkout__input {
 }
 
 .checkout__button:hover {
-  background-color: #08900c;
+  background-color: #2C742F;
+}
+
+/* === Custom Checkbox === */
+.checkout__checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.checkout__checkbox label {
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 20px;
+}
+
+.checkout__checkbox label::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 3px;
+  transition: all 0.2s ease;
+}
+
+.checkout__checkbox input[type="checkbox"]:checked + label::before,
+.checkout__checkbox input[type="checkbox"]:hover:checked + label::before {
+  background-color: #00B207;
+}
+
+.checkout__checkbox input[type="checkbox"]:checked + label::after {
+  content: '✔';
+  position: absolute;
+  left: 4px;
+  top: 0px;
+  color: white;
+  font-size: 14px;
+}
+
+
+/* === Custom Radio === */
+.checkout__radio input[type="radio"] {
+  display: none;
+}
+
+.checkout__radio span {
+  position: relative;
+  padding-left: 28px;
+  display: inline-block;
+  line-height: 20px;
+}
+
+.checkout__radio span::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border: 1.5px solid #ccc;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: all 0.2s ease;
+}
+
+/* Активна радіо — зовнішній зелений круг */
+.checkout__radio input[type="radio"]:checked + span::before {
+  border-color: #00B207;
+}
+
+/* Внутрішній зелений круг всередині */
+.checkout__radio input[type="radio"]:checked + span::after {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  width: 12px;
+  height: 12px;
+  background-color: #00B207;
+  border-radius: 50%;
 }
