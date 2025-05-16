@@ -313,7 +313,7 @@ body {
   height: 14px;
 }
 
-.news__label {
+.news__title-card {
   font-size: 18px;
   line-height: 1.5;
   font-weight: 500;
@@ -321,7 +321,7 @@ body {
   transition: color 0.3s ease;
 }
 
-.news__title:hover {
+.news__title-card:hover {
   color: #2C742F; 
 }
 
