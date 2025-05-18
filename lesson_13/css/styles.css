@@ -58,7 +58,7 @@ body {
 .reviews__header {
   max-width: 100%;
   flex-shrink: 0;
-  margin-left: 86px;
+  text-align: left;
 }
 
 .title {
@@ -95,7 +95,6 @@ body {
   padding: 20px;
   display: flex;
   flex-direction: column;
-  height: 476px;
   transition: background-color 0.3s ease;
 }
 
