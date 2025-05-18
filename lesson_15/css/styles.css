@@ -119,26 +119,46 @@ body {
 
 /*section Featured Products cards*/
 
+.products__wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 .products__container {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
+  align-items: stretch
 }
 
 .card {
-  flex: 0 1 calc(100% / 2 - ((30px * (2 - 1)) / 2));
-   
-  min-height: 327px;
-	border: 1px solid #E6E6E6;
-	position: relative;
+  flex: 1 1 calc(33.333% - 20px);
+  max-width: calc(33.333% - 20px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #E6E6E6;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
   transition: all 0.3s ease;
+  min-height: 100%;
 }
-/*
+
 @media (max-width: 991.98px) {
-  .products__container {
-    flex-wrap: wrap; 
+  .card {
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
   }
-}*/
+}
+
+@media (max-width: 600px) {
+  .card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
 
 .card:hover {
   box-shadow: 0px 0px 12px 0px rgba(32, 181, 38, 0.32);
@@ -179,10 +199,8 @@ body {
   height: 230px;
   position: relative;
   overflow: hidden;
-  /*
-
-  vertical-align: middle;
-  max-width: 100%;*/
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
 .card__image img {
