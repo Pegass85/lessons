@@ -1,0 +1,208 @@
+@import url("reset.css");
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  color: black;
+  font-weight: 500;
+  line-height: 150%;
+  text-transform: uppercase;
+  margin: 0;
+  min-height: 100vh;
+  background-image: url("../img/baner.avif"); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.wrapper {
+	display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.wrapper > main {
+	flex-grow: 1;
+}
+
+[class*="__container"] {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* ===== HEADER OVERLAY ===== */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  padding: 20px 0;
+  background: rgba(255, 255, 255, 0.60);
+  backdrop-filter: blur(113.6500015258789px);   
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px; /* відступ між логотипом, меню, кнопкою */
+  flex-wrap: wrap;
+  padding: 10px 30px;
+}
+
+/* ===== LOGO ===== */
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.header__icon {
+  width: 44px;
+  height: 44px;
+}
+
+.header__text {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.header__text:hover {
+  color: #d9541d; 
+}
+
+/* ===== MENU ===== */
+.menu__list {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.menu__item a {
+  transition: color 0.3s ease;
+}
+
+.menu__item a:hover {
+  color: #d9541d;
+}
+
+/* ===== CTA BUTTON ===== */
+.quote-button {
+  display: flex;
+  align-items: center;
+  background-color: #F26522;
+  color: #fff;
+  padding: 8px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-transform: none;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+  gap: 8px;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.quote-button:hover {
+  background-color: #d9541d;
+}
+
+.quote-button__icon {
+  width: 24px;
+  height: 24px;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  width: 100%;
+  color: #fff;
+  background-color: #d9541d;
+}
+
+.footer__container {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 40px 30px;
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .footer__container {
+    font-size: 24px;
+    padding: 30px 20px;
+  }
+}
+
+/* ===== АДАПТАЦІЯ ===== */
+@media (max-width: 767.98px) {
+  .header__container {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .menu__list {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .quote-button {
+    font-size: 14px;
+    padding: 8px 20px;
+  }
+
+  .header__logo {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .header__container {
+    gap: 15px;
+    padding: 10px 15px;
+  }
+
+  .menu__list {
+    gap: 10px;
+  }
+
+  .quote-button {
+    font-size: 13px;
+    padding: 6px 16px;
+  }
+
+  .header__text {
+    font-size: 16px;
+  }
+
+  .footer__container {
+    font-size: 20px;
+    padding: 20px 15px;
+  }
+}
+
+/* ===== ВІДОБРАЖЕННЯ СТИЛІВ ДЛЯ СЕНСОРНИХ ПРИСТРОЇВ ===== */
+@media (any-hover: none) {
+  .menu__item a {
+    color: #d9541d; 
+  }
+
+  .quote-button {
+    background-color: #d9541d;
+  }
+
+  .header__text {
+    color: #d9541d;
+  }
+}
