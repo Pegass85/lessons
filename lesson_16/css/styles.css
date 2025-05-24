@@ -1,5 +1,7 @@
 @import url("reset.css");
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 13px;
@@ -18,7 +20,7 @@ body {
 .wrapper {
 	display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 100%;
 }
 
 .wrapper > main {
@@ -48,7 +50,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 40px; /* відступ між логотипом, меню, кнопкою */
+  gap: 40px;
   flex-wrap: wrap;
   padding: 10px 30px;
 }
@@ -59,6 +61,9 @@ body {
   align-items: center;
   gap: 6px;
   flex-shrink: 0;
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
 }
 
 .header__icon {
@@ -70,9 +75,10 @@ body {
   font-size: 18px;
   font-weight: 700;
   line-height: 150%;
+  transition: color 0.3s ease;
 }
 
-.header__text:hover {
+.header__logo:hover {
   color: #d9541d; 
 }
 
@@ -118,7 +124,12 @@ body {
 .quote-button__icon {
   width: 24px;
   height: 24px;
+  transition: transform 0.3s ease;
 }
+
+.quote-button:hover .quote-button__icon {
+  transform: translateX(6px);
+} 
 
 /* ===== FOOTER ===== */
 .footer {
@@ -136,6 +147,9 @@ body {
   text-align: center;
 }
 
+
+
+/* ===== АДАПТАЦІЯ ===== */
 @media (max-width: 768px) {
   .footer__container {
     font-size: 24px;
@@ -143,7 +157,6 @@ body {
   }
 }
 
-/* ===== АДАПТАЦІЯ ===== */
 @media (max-width: 767.98px) {
   .header__container {
     flex-direction: column;
