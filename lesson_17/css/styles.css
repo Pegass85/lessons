@@ -25,7 +25,7 @@ body {
   padding-right: 15px;
 }
 
-.header {
+.header, .footer {
 	padding: 25px 0px;
 	font-size: 20px;
 	letter-spacing: 3px;
@@ -42,32 +42,15 @@ body {
 }
 
 @media (max-width: 767.98px) {
-	.header {
-		padding: 15px 0px;
-		font-size: 16px;
-	}
-}
-
-.footer {
-	padding: 25px 0px;
-	font-size: 20px;
-	letter-spacing: 3px;
-	text-transform: uppercase;
-	background-color: #0e4629;
-	color: #92f67c;
-	text-align: center;
+  .header, .footer {
+    padding: 15px 0px;
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 991.98px) {
 	.footer {
 		padding: 20px 0px;
-	}
-}
-
-@media (max-width: 767.98px) {
-	.footer {
-		padding: 15px 0px;
-		font-size: 16px;
 	}
 }
 
@@ -195,14 +178,12 @@ body {
 	width: 23px;
 	height: 23px;
 	transition: transform 0.3s;
-	will-change: ransform;
 }
 
 .flower__cart {
 	width: 23px;
 	height: 23px;
 	transition: transform 0.3s;
-	will-change: transform;
 }
 
 @media(any-hover:hover) {
@@ -406,6 +387,18 @@ body {
   gap: 24px;
 }
 
+.ecobazar__proposals {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+
+.ecobazar__promo-card.ad {
+  grid-column: 4;
+  height: 100%;
+}
+
 .ad {
   position: relative;
   background-color: #ccf17b14;
@@ -581,11 +574,7 @@ body {
 .btn-eye::after {
   background: url(../img/icons/eye.svg);
 }
-.ecobazar__proposals {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(312px, 100%), 1fr));
-  gap: 24px;
-}
+
 .category {
   display: grid;
   gap: 16px;
@@ -823,7 +812,9 @@ body {
   .ecobazar__proposals {
     grid-template-columns: repeat(auto-fill, minmax(312px, 1fr));
   }
-
+  .ecobazar__promo-card.ad {
+    grid-column: 1 / -1;
+  }
   .ecobazar__proposals .ad {
     grid-column: span 1;
     margin: 0;
