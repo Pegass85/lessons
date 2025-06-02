@@ -394,7 +394,7 @@ body {
 }
 
 .ecobazar__promo-card.ad {
-  grid-column: 4;
+  grid-column: span 1;
   height: 100%;
 }
 
