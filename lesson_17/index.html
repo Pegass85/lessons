@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>lesson 17</title>
     <link rel="stylesheet" href="css/styles.css" />
-    <link
-        href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
-        rel="stylesheet" />
+
 </head>
 
 <body>
@@ -24,140 +22,137 @@
 
                 <!--Section Flower Collection-->
 
-                <section class="flower-collection">
+                <div class="flower">
+                    <div class="flower__container">
+                        <div class="flower__body">
+                            <div class="flower__card">
+                                <a href="#" class="flower__image">
+                                    <img src="img/flowers/petals.avif" alt="some flower">
+                                </a>
+                                <div class="flower__info-card">
+                                    <a href="#" class="flower__name-card">Enchanted Petals</a>
+                                    <div class="flower__action-card">
+                                        <a class="flower__like" href="#">
+                                            <img src="img/icons/heart.svg" alt="like">
+                                        </a>
+                                        <a class="flower__cart" href="#">
+                                            <img src="img/icons/bag.svg" alt="cart">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="flower__price">70 Euro</div>
+                            </div>
 
-                    <!-- Заголовок -->
-                    <div class="flower-collection__card flower-collection__card--small">
-                        <h2 class="flower-collection__title">Catalog of Floral Delights for Every Occasion</h2>
+                            <h2 class="flower__title">Catalog of Floral Delights for Every
+                                Occasion
+                            </h2>
+
+                            <div class="flower__card">
+                                <a href="#" class="flower__image">
+                                    <img src="img/flowers/meadows.avif" alt="some flower">
+                                </a>
+                                <div class="flower__info-card">
+                                    <a href="#" class="flower__name-card">Whispering Meadows</a>
+                                    <div class="flower__action-card">
+                                        <a class="flower__like" href="#">
+                                            <img src="img/icons/heart.svg" alt="like">
+                                        </a>
+                                        <a class="flower__cart" href="#">
+                                            <img src="img/icons/bag.svg" alt="cart">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="flower__price">45 Euro</div>
+                            </div>
+
+                            <div class="flower__card">
+                                <a href="#" class="flower__image">
+                                    <img src="img/flowers/bliss.avif" alt="some flower">
+                                </a>
+                                <div class="flower__info-card">
+                                    <a href="#" class="flower__name-card">Serene Bliss</a>
+                                    <div class="flower__action-card">
+                                        <a class="flower__like" href="#">
+                                            <img src="img/icons/heart.svg" alt="like">
+                                        </a>
+                                        <a class="flower__cart" href="#">
+                                            <img src="img/icons/bag.svg" alt="cart">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="flower__price">60 Euro</div>
+                            </div>
+
+                            <div class="flower__card">
+                                <a href="#" class="flower__image">
+                                    <img src="img/flowers/harmony.avif" alt="some flower">
+                                </a>
+                                <div class="flower__info-card">
+                                    <a href="#" class="flower__name-card">Floral Harmony</a>
+                                    <div class="flower__action-card">
+                                        <a class="flower__like" href="#">
+                                            <img src="img/icons/heart.svg" alt="like">
+                                        </a>
+                                        <a class="flower__cart" href="#">
+                                            <img src="img/icons/bag.svg" alt="cart">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="flower__price">80 Euro</div>
+                            </div>
+
+                            <div class="flower__card">
+                                <a href="#" class="flower__image">
+                                    <img src="img/flowers/serenade.avif" alt="some flower">
+                                </a>
+                                <div class="flower__info-card">
+                                    <a href="#" class="flower__name-card">Springtime Serenade</a>
+                                    <div class="flower__action-card">
+                                        <a class="flower__like" href="#">
+                                            <img src="img/icons/heart.svg" alt="like">
+                                        </a>
+                                        <a class="flower__cart" href="#">
+                                            <img src="img/icons/bag.svg" alt="cart">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="flower__price">65 Euro</div>
+                            </div>
+
+                            <div class="flower__card">
+                                <a href="#" class="flower__image">
+                                    <img src="img/flowers/splendor.avif" alt="some flower">
+                                </a>
+                                <div class="flower__info-card">
+                                    <a href="#" class="flower__name-card">Blooming Splendor</a>
+                                    <div class="flower__action-card">
+                                        <a class="flower__like" href="#">
+                                            <img src="img/icons/heart.svg" alt="like">
+                                        </a>
+                                        <a class="flower__cart" href="#">
+                                            <img src="img/icons/bag.svg" alt="cart">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="flower__price">50 Euro</div>
+                            </div>
+
+
+                        </div>
+                        <button class="flower__link-more" type="button">Open More</button>
                     </div>
-
-                    <!-- Card 1 -->
-                    <div class="flower-collection__card flower-collection__card--big">
-                        <img src="img/flowers/petals.avif" alt="bouquet of flowers">
-                        <div class="flower-collection__content">
-                            <div class="flower-collection__text">
-                                <h3 class="flower-collection__label"><a href="#">Enchanted Petals</a></h3>
-                                <div class="flower-collection__price">70 Euro</div>
-                            </div>
-                            <div class="flower-collection__actions">
-                                <button class="flower-collection__btn"><img src="img/icons/heart.svg"
-                                        alt="heart icon"></button>
-                                <button class="flower-collection__btn"><img src="img/icons/bag.svg"
-                                        alt="cart icon"></button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card 2 -->
-                    <div class="flower-collection__card flower-collection__card--big">
-                        <img src="img/flowers/harmony.avif" alt="bouquet of flowers">
-                        <div class="flower-collection__content">
-                            <div class="flower-collection__text">
-                                <h3 class="flower-collection__label"><a href="#">Floral Harmony</a></h3>
-                                <div class="flower-collection__price">80 Euro</div>
-                            </div>
-                            <div class="flower-collection__actions">
-                                <button class="flower-collection__btn"><img src="img/icons/heart.svg"
-                                        alt="heart icon"></button>
-                                <button class="flower-collection__btn"><img src="img/icons/bag.svg"
-                                        alt="cart icon"></button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Група карток 3–6 -->
-                    <div class="flower-collection__center-group">
-                        <!-- Card 3 -->
-                        <div class="flower-collection__card flower-collection__card--middle">
-                            <img src="img/flowers/meadows.avif" alt="bouquet of flowers">
-                            <div class="flower-collection__content">
-                                <div class="flower-collection__text">
-                                    <h3 class="flower-collection__label"><a href="#">Whispering Meadows</a></h3>
-                                    <div class="flower-collection__price">45 Euro</div>
-                                </div>
-                                <div class="flower-collection__actions">
-                                    <button class="flower-collection__btn"><img src="img/icons/heart.svg"
-                                            alt="heart icon"></button>
-                                    <button class="flower-collection__btn"><img src="img/icons/bag.svg"
-                                            alt="cart icon"></button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Card 4 -->
-                        <div class="flower-collection__card flower-collection__card--middle">
-                            <img src="img/flowers/serenade.avif" alt="bouquet of flowers">
-                            <div class="flower-collection__content">
-                                <div class="flower-collection__text">
-                                    <h3 class="flower-collection__label"><a href="#">Springtime Serenade</a></h3>
-                                    <div class="flower-collection__price">65 Euro</div>
-                                </div>
-                                <div class="flower-collection__actions">
-                                    <button class="flower-collection__btn"><img src="img/icons/heart.svg"
-                                            alt="heart icon"></button>
-                                    <button class="flower-collection__btn"><img src="img/icons/bag.svg"
-                                            alt="cart icon"></button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Card 5 -->
-                        <div class="flower-collection__card flower-collection__card--middle">
-                            <img src="img/flowers/bliss.avif" alt="bouquet of flowers">
-                            <div class="flower-collection__content">
-                                <div class="flower-collection__text">
-                                    <h3 class="flower-collection__label"><a href="#">Serene Bliss</a></h3>
-                                    <div class="flower-collection__price">60 Euro</div>
-                                </div>
-                                <div class="flower-collection__actions">
-                                    <button class="flower-collection__btn"><img src="img/icons/heart.svg"
-                                            alt="heart icon"></button>
-                                    <button class="flower-collection__btn"><img src="img/icons/bag.svg"
-                                            alt="cart icon"></button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Card 6 -->
-                        <div class="flower-collection__card flower-collection__card--middle">
-                            <img src="img/flowers/splendor.avif" alt="bouquet of flowers">
-                            <div class="flower-collection__content">
-                                <div class="flower-collection__text">
-                                    <h3 class="flower-collection__label"><a href="#">Blooming Splendor</a></h3>
-                                    <div class="flower-collection__price">50 Euro</div>
-                                </div>
-                                <div class="flower-collection__actions">
-                                    <button class="flower-collection__btn"><img src="img/icons/heart.svg"
-                                            alt="heart icon"></button>
-                                    <button class="flower-collection__btn"><img src="img/icons/bag.svg"
-                                            alt="cart icon"></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Кнопка Open More -->
-                    <div class="flower-collection__btn-wrapper">
-                        <button type="button" class="flower-collection__btn flower-collection__btn--more">Open
-                            More</button>
-                    </div>
-                </section>
+                </div>
 
 
                 <!--Section Ecobazar Products-->
-                <section class="products">
+                <div class="products">
                     <div class="products__container">
                         <div class="products__title title-products">
-                            <p class="title-products__text-small">Products</p>
+                            <h2 class="title-products__head">Products</h2>
                             <h2 class="title-products__text">Our Featured Products</h2>
                         </div>
 
-
-                        <!--Our Featured Products-->
                         <div class="products__cards">
-
-                            <!--bannar_1-->
-
                             <div class="bannar">
                                 <img class="bannar__image" src="img/products/bannar_1.avif" alt="bannar">
                                 <div class="bannar__content content-bannar">
@@ -167,13 +162,11 @@
                                 </div>
                             </div>
 
-
                             <div class="card">
                                 <div class="card__activ activ">
                                     <a href="#" class="activ__link"><img src="img/icons/heart.svg" alt="icon heart"></a>
                                     <a href="#" class="activ__link"><img src="img/icons/eye.svg" alt="icon eye"></a>
                                 </div>
-
                                 <a class="card__image" href="#"><img src="img/products/cabbage.avif"
                                         alt="Chanise Cabbage"></a>
                                 <div class="card__info info">
@@ -182,23 +175,26 @@
                                     <div class="info__wrapper-price">
                                         <div class="info__price">$14.99
                                         </div>
-                                        <a href="#" class="button-card">
-                                            <img src="img/icons/bag.svg" alt="icon bag">
+                                        <a href="#" class="info__bag bag">
+                                            <img class="bag__black-bag" src="img/icons/black_bag.svg" alt="black_bag">
+                                            <img class="bag__white-bag" src="img/icons/white_bag.svg" alt="white_bag">
                                         </a>
                                     </div>
-                                    <div class="info__rating">
-                                        <img src="img/icons/stars.svg" alt="rating stars">
+                                    <div class="info__stars star">
+                                        <img class="star__item" src="img/icons/yellow_star.svg" alt="yellow_star">
+                                        <img class="star__item" src="img/icons/yellow_star.svg" alt="yellow_star">
+                                        <img class="star__item" src="img/icons/yellow_star.svg" alt="yellow_star">
+                                        <img class="star__item" src="img/icons/yellow_star.svg" alt="yellow_star">
+                                        <img class="star__item" src="img/icons/gray_star.svg" alt="gray_star">
                                     </div>
                                 </div>
                             </div>
-
 
                             <div class="card">
                                 <div class="card__activ activ">
                                     <a href="#" class="activ__link"><img src="img/icons/heart.svg" alt="icon heart"></a>
                                     <a href="#" class="activ__link"><img src="img/icons/eye.svg" alt="icon eye"></a>
                                 </div>
-
                                 <a class="card__image" href="#"><img src="img/products/lettuce.avif" alt="Lettuce"></a>
                                 <div class="card__info info">
                                     <h3 class="info__product"><a href="#" class="info__link-product">Green
@@ -206,16 +202,20 @@
                                     <div class="info__wrapper-price">
                                         <div class="info__price">$14.99
                                         </div>
-                                        <a href="#" class="button-card">
-                                            <img src="img/icons/bag.svg" alt="icon bag">
+                                        <a href="#" class="info__bag bag">
+                                            <img class="bag__black-bag" src="img/icons/black_bag.svg" alt="black_bag">
+                                            <img class="bag__white-bag" src="img/icons/white_bag.svg" alt="white_bag">
                                         </a>
                                     </div>
-                                    <div class="info__rating">
-                                        <img src="img/icons/stars.svg" alt="rating stars">
+                                    <div class="info__stars star">
+                                        <img class="star__item" src="img/icons/yellow_star.svg" alt="yellow_star">
+                                        <img class="star__item" src="img/icons/yellow_star.svg" alt="yellow_star">
+                                        <img class="star__item" src="img/icons/yellow_star.svg" alt="yellow_star">
+                                        <img class="star__item" src="img/icons/yellow_star.svg" alt="yellow_star">
+                                        <img class="star__item" src="img/icons/gray_star.svg" alt="gray_star">
                                     </div>
                                 </div>
                             </div>
-
 
                             <div class="card">
                                 <div class="card__activ activ">
@@ -230,16 +230,20 @@
                                     <div class="info__wrapper-price">
                                         <div class="info__price">$14.99
                                         </div>
-                                        <a href="#" class="button-card">
-                                            <img src="img/icons/bag.svg" alt="icon bag">
+                                        <a href="#" class="info__bag bag">
+                                            <img class="bag__black-bag" src="img/icons/black_bag.svg" alt="black_bag">
+                                            <img class="bag__white-bag" src="img/icons/white_bag.svg" alt="white_bag">
                                         </a>
                                     </div>
-                                    <div class="info__rating">
-                                        <img src="img/icons/stars.svg" alt="rating stars">
+                                    <div class="info__stars star">
+                                        <img class="star__item" src="img/icons/yellow_star.svg" alt="yellow_star">
+                                        <img class="star__item" src="img/icons/yellow_star.svg" alt="yellow_star">
+                                        <img class="star__item" src="img/icons/yellow_star.svg" alt="yellow_star">
+                                        <img class="star__item" src="img/icons/yellow_star.svg" alt="yellow_star">
+                                        <img class="star__item" src="img/icons/gray_star.svg" alt="gray_star">
                                     </div>
                                 </div>
                             </div>
-
 
                             <div class="card">
                                 <div class="card__activ activ">
@@ -252,233 +256,261 @@
                                     <div class="info__wrapper-price">
                                         <div class="info__price">$14.99
                                         </div>
-                                        <a href="#" class="button-card">
-                                            <img src="img/icons/bag.svg" alt="icon bag">
+                                        <a href="#" class="info__bag bag">
+                                            <img class="bag__black-bag" src="img/icons/black_bag.svg" alt="black_bag">
+                                            <img class="bag__white-bag" src="img/icons/white_bag.svg" alt="white_bag">
                                         </a>
                                     </div>
-                                    <div class="info__rating">
-                                        <img src="img/icons/stars.svg" alt="rating stars">
+                                    <div class="info__stars star">
+                                        <img class="star__item" src="img/icons/yellow_star.svg" alt="yellow_star">
+                                        <img class="star__item" src="img/icons/yellow_star.svg" alt="yellow_star">
+                                        <img class="star__item" src="img/icons/yellow_star.svg" alt="yellow_star">
+                                        <img class="star__item" src="img/icons/yellow_star.svg" alt="yellow_star">
+                                        <img class="star__item" src="img/icons/gray_star.svg" alt="gray_star">
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <!--Hot Deals-->
 
-                        <div class="products__little little">
-                            <div class="little__hot">
-                                <h3 class="little__title">Hot Deals</h3>
-
-                                <div class="card-little">
-                                    <a href="#" class="card-little__image">
+                        <div class="products__ad ad">
+                            <div class="ad__hot">
+                                <h3 class="ad__title">Hot Deals</h3>
+                                <div class="card-ad">
+                                    <a href="#" class="card-ad__image">
                                         <img src="img/products/apple.avif" alt="Green Apple">
                                     </a>
-                                    <div class="card-little__body">
-                                        <a href="#" class="card-little__title">Indian Malta</a>
-                                        <div class="card-little__activ">
-                                            <a href="#" class="card-little__bag"><img src="img/icons/bag.svg"
-                                                    alt="icon bag"></a>
-                                            <a href="#" class="card-little__view"><img src="img/icons/eye.svg"
+                                    <div class="card-ad__body">
+                                        <a href="#" class="card-ad__title">Indian Malta</a>
+                                        <div class="card-ad__activ activ-ad">
+                                            <a href="#" class="activ-ad__bag"><img src="img/icons/white_bag.svg"
+                                                    alt="cart"></a>
+                                            <a href="#" class="activ-ad__view"><img src="img/icons/eye.svg"
                                                     alt="icon eye"></a>
-                                            <a href="#" class="card-little__wishlist"><img src="img/icons/heart.svg"
-                                                    alt="icon heart"></a>
+                                            <a href="#" class="activ-ad__wishlist"><img src="img/icons/heart.svg"
+                                                    alt="icon icon"></a>
                                         </div>
-                                        <div class="card-little__price">$14.99</div>
-                                        <div class="card-little__rating">
-                                            <img src="img/icons/stars.svg" alt="icons stars">
+                                        <div class="card-ad__price">$14.99</div>
+                                        <div class="card-ad__rating star">
+                                            <img class="star__item" src="img/icons/yellow_star.svg" alt="yellow_star">
+                                            <img class="star__item" src="img/icons/yellow_star.svg" alt="yellow_star">
+                                            <img class="star__item" src="img/icons/yellow_star.svg" alt="yellow_star">
+                                            <img class="star__item" src="img/icons/yellow_star.svg" alt="yellow_star">
+                                            <img class="star__item" src="img/icons/gray_star.svg" alt="gray_star">
                                         </div>
                                     </div>
                                 </div>
 
-
-                                <div class="card-little">
-                                    <a href="#" class="card-little__image">
+                                <div class="card-ad">
+                                    <a href="#" class="card-ad__image">
                                         <img src="img/products/orange.avif" alt="Indian Malta">
                                     </a>
-                                    <div class="card-little__body">
-                                        <a href="#" class="card-little__title">Indian Malta</a>
-                                        <div class="card-little__activ">
-                                            <a href="#" class="card-little__bag"><img src="img/icons/bag.svg"
-                                                    alt="icon bag"></a>
-                                            <a href="#" class="card-little__view"><img src="img/icons/eye.svg"
+                                    <div class="card-ad__body">
+                                        <a href="#" class="card-ad__title">Indian Malta</a>
+                                        <div class="card-ad__activ activ-ad">
+                                            <a href="#" class="activ-ad__bag"><img src="img/icons/white_bag.svg"
+                                                    alt="cart"></a>
+                                            <a href="#" class="activ-ad__view"><img src="img/icons/eye.svg"
                                                     alt="icon eye"></a>
-                                            <a href="#" class="card-little__wishlist"><img src="img/icons/heart.svg"
-                                                    alt="icon heart"></a>
+                                            <a href="#" class="activ-ad__wishlist"><img src="img/icons/heart.svg"
+                                                    alt="icon icon"></a>
                                         </div>
-                                        <div class="card-little__price">$14.99</div>
-                                        <div class="card-little__rating">
-                                            <img src="img/icons/stars.svg" alt="icons stars">
+                                        <div class="card-ad__price">$14.99</div>
+                                        <div class="card-ad__rating star">
+                                            <img class="star__item" src="img/icons/yellow_star.svg" alt="yellow_star">
+                                            <img class="star__item" src="img/icons/yellow_star.svg" alt="yellow_star">
+                                            <img class="star__item" src="img/icons/yellow_star.svg" alt="yellow_star">
+                                            <img class="star__item" src="img/icons/yellow_star.svg" alt="yellow_star">
+                                            <img class="star__item" src="img/icons/gray_star.svg" alt="gray_star">
                                         </div>
                                     </div>
                                 </div>
 
-
-                                <div class="card-little">
-                                    <a href="#" class="card-little__image">
+                                <div class="card-ad">
+                                    <a href="#" class="card-ad__image">
                                         <img src="img/products/lettuce.avif" alt="Green Lettuce">
                                     </a>
-                                    <div class="card-little__body">
-                                        <a href="#" class="card-little__title">Green Lettuce</a>
-                                        <div class="card-little__activ">
-                                            <a href="#" class="card-little__bag"><img src="img/icons/bag.svg"
-                                                    alt="icon bag"></a>
-                                            <a href="#" class="card-little__view"><img src="img/icons/eye.svg"
+                                    <div class="card-ad__body">
+                                        <a href="#" class="card-ad__title">Green Lettuce</a>
+                                        <div class="card-ad__activ activ-ad">
+                                            <a href="#" class="activ-ad__bag"><img src="img/icons/white_bag.svg"
+                                                    alt="cart"></a>
+                                            <a href="#" class="activ-ad__view"><img src="img/icons/eye.svg"
                                                     alt="icon eye"></a>
-                                            <a href="#" class="card-little__wishlist"><img src="img/icons/heart.svg"
-                                                    alt="icon heart"></a>
+                                            <a href="#" class="activ-ad__wishlist"><img src="img/icons/heart.svg"
+                                                    alt="icon icon"></a>
                                         </div>
-                                        <div class="card-little__price">$14.99</div>
-                                        <div class="card-little__rating">
-                                            <img src="img/icons/stars.svg" alt="icons stars">
+                                        <div class="card-ad__price">$14.99</div>
+                                        <div class="card-ad__rating star">
+                                            <img class="star__item" src="img/icons/yellow_star.svg" alt="yellow_star">
+                                            <img class="star__item" src="img/icons/yellow_star.svg" alt="yellow_star">
+                                            <img class="star__item" src="img/icons/yellow_star.svg" alt="yellow_star">
+                                            <img class="star__item" src="img/icons/yellow_star.svg" alt="yellow_star">
+                                            <img class="star__item" src="img/icons/gray_star.svg" alt="gray_star">
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <!--Best Seller-->
-
-                            <div class="little__best">
-                                <h3 class="little__title">Best Seller</h3>
-                                <div class="card-little">
-                                    <a href="#" class="card-little__image">
+                            <div class="ad__best">
+                                <h3 class="ad__title">Best Seller</h3>
+                                <div class="card-ad">
+                                    <a href="#" class="card-ad__image">
                                         <img src="img/products/eggplant.webp" alt="Eggplant">
                                     </a>
-                                    <div class="card-little__body">
-                                        <a href="#" class="card-little__title">Eggplant</a>
-                                        <div class="card-little__activ">
-                                            <a href="#" class="card-little__bag"><img src="img/icons/bag.svg"
-                                                    alt="icon bag"></a>
-                                            <a href="#" class="card-little__view"><img src="img/icons/eye.svg"
+                                    <div class="card-ad__body">
+                                        <a href="#" class="card-ad__title">Eggplant</a>
+                                        <div class="card-ad__activ activ-ad">
+                                            <a href="#" class="activ-ad__bag"><img src="img/icons/white_bag.svg"
+                                                    alt="cart"></a>
+                                            <a href="#" class="activ-ad__view"><img src="img/icons/eye.svg"
                                                     alt="icon eye"></a>
-                                            <a href="#" class="card-little__wishlist"><img src="img/icons/heart.svg"
-                                                    alt="icon heart"></a>
+                                            <a href="#" class="activ-ad__wishlist"><img src="img/icons/heart.svg"
+                                                    alt="icon icon"></a>
                                         </div>
-                                        <div class="card-little__price">$14.99</div>
-                                        <div class="card-little__rating">
-                                            <img src="img/icons/stars.svg" alt="icons stars">
+                                        <div class="card-ad__price">$14.99</div>
+                                        <div class="card-ad__rating star">
+                                            <img class="star__item" src="img/icons/yellow_star.svg" alt="yellow_star">
+                                            <img class="star__item" src="img/icons/yellow_star.svg" alt="yellow_star">
+                                            <img class="star__item" src="img/icons/yellow_star.svg" alt="yellow_star">
+                                            <img class="star__item" src="img/icons/yellow_star.svg" alt="yellow_star">
+                                            <img class="star__item" src="img/icons/gray_star.svg" alt="gray_star">
                                         </div>
                                     </div>
                                 </div>
 
-
-                                <div class="card-little">
-                                    <a href="#" class="card-little__image">
+                                <div class="card-ad">
+                                    <a href="#" class="card-ad__image">
                                         <img src="img/products/capsicum.avif" alt="Red Capsicum">
                                     </a>
-                                    <div class="card-little__body">
-                                        <a href="#" class="card-little__title">Red Capsicum</a>
-                                        <div class="card-little__activ">
-                                            <a href="#" class="card-little__bag"><img src="img/icons/bag.svg"
-                                                    alt="icon bag"></a>
-                                            <a href="#" class="card-little__view"><img src="img/icons/eye.svg"
+                                    <div class="card-ad__body">
+                                        <a href="#" class="card-ad__title">Red Capsicum</a>
+                                        <div class="card-ad__activ activ-ad">
+                                            <a href="#" class="activ-ad__bag"><img src="img/icons/white_bag.svg"
+                                                    alt="cart"></a>
+                                            <a href="#" class="activ-ad__view"><img src="img/icons/eye.svg"
                                                     alt="icon eye"></a>
-                                            <a href="#" class="card-little__wishlist"><img src="img/icons/heart.svg"
-                                                    alt="icon heart"></a>
+                                            <a href="#" class="activ-ad__wishlist"><img src="img/icons/heart.svg"
+                                                    alt="icon icon"></a>
                                         </div>
-                                        <div class="card-little__price">$14.99</div>
-                                        <div class="card-little__rating">
-                                            <img src="img/icons/stars.svg" alt="icons stars">
+                                        <div class="card-ad__price">$14.99</div>
+                                        <div class="card-ad__rating star">
+                                            <img class="star__item" src="img/icons/yellow_star.svg" alt="yellow_star">
+                                            <img class="star__item" src="img/icons/yellow_star.svg" alt="yellow_star">
+                                            <img class="star__item" src="img/icons/yellow_star.svg" alt="yellow_star">
+                                            <img class="star__item" src="img/icons/yellow_star.svg" alt="yellow_star">
+                                            <img class="star__item" src="img/icons/gray_star.svg" alt="gray_star">
                                         </div>
                                     </div>
                                 </div>
 
-
-                                <div class="card-little">
-                                    <a href="#" class="card-little__image">
+                                <div class="card-ad">
+                                    <a href="#" class="card-ad__image">
                                         <img src="img/products/tomatos.avif" alt="Red Tomatos">
                                     </a>
-                                    <div class="card-little__body">
-                                        <a href="#" class="card-little__title">Red Tomatos</a>
-                                        <div class="card-little__activ">
-                                            <a href="#" class="card-little__bag"><img src="img/icons/bag.svg"
-                                                    alt="icon bag"></a>
-                                            <a href="#" class="card-little__view"><img src="img/icons/eye.svg"
+                                    <div class="card-ad__body">
+                                        <a href="#" class="card-ad__title">Red Tomatos</a>
+                                        <div class="card-ad__activ activ-ad">
+                                            <a href="#" class="activ-ad__bag"><img src="img/icons/white_bag.svg"
+                                                    alt="cart"></a>
+                                            <a href="#" class="activ-ad__view"><img src="img/icons/eye.svg"
                                                     alt="icon eye"></a>
-                                            <a href="#" class="card-little__wishlist"><img src="img/icons/heart.svg"
-                                                    alt="icon heart"></a>
+                                            <a href="#" class="activ-ad__wishlist"><img src="img/icons/heart.svg"
+                                                    alt="icon icon"></a>
                                         </div>
-                                        <div class="card-little__price">$14.99</div>
-                                        <div class="card-little__rating">
-                                            <img src="img/icons/stars.svg" alt="icons stars">
+                                        <div class="card-ad__price">$14.99</div>
+                                        <div class="card-ad__rating star">
+                                            <img class="star__item" src="img/icons/yellow_star.svg" alt="yellow_star">
+                                            <img class="star__item" src="img/icons/yellow_star.svg" alt="yellow_star">
+                                            <img class="star__item" src="img/icons/yellow_star.svg" alt="yellow_star">
+                                            <img class="star__item" src="img/icons/yellow_star.svg" alt="yellow_star">
+                                            <img class="star__item" src="img/icons/gray_star.svg" alt="gray_star">
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <!--Top Rated-->
-
-                            <div class="little__top">
-                                <h3 class="little__title">Top Rated</h3>
-                                <div class="card-little">
-                                    <a href="#" class="card-little__image">
+                            <div class="ad__top">
+                                <h3 class="ad__title">Top Rated</h3>
+                                <div class="card-ad">
+                                    <a href="#" class="card-ad__image">
                                         <img src="img/products/potatos.webp" alt="Big Potatos">
                                     </a>
-                                    <div class="card-little__body">
-                                        <a href="#" class="card-little__title">Big Potatos</a>
-                                        <div class="card-little__activ">
-                                            <a href="#" class="card-little__bag"><img src="img/icons/bag.svg"
-                                                    alt="icon bag"></a>
-                                            <a href="#" class="card-little__view"><img src="img/icons/eye.svg"
+                                    <div class="card-ad__body">
+                                        <a href="#" class="card-ad__title">Big Potatos</a>
+                                        <div class="card-ad__activ activ-ad">
+                                            <a href="#" class="activ-ad__bag"><img src="img/icons/white_bag.svg"
+                                                    alt="cart"></a>
+                                            <a href="#" class="activ-ad__view"><img src="img/icons/eye.svg"
                                                     alt="icon eye"></a>
-                                            <a href="#" class="card-little__wishlist"><img src="img/icons/heart.svg"
-                                                    alt="icon heart"></a>
+                                            <a href="#" class="activ-ad__wishlist"><img src="img/icons/heart.svg"
+                                                    alt="icon icon"></a>
                                         </div>
-                                        <div class="card-little__price">$14.99</div>
-                                        <div class="card-little__rating">
-                                            <img src="img/icons/stars.svg" alt="icons stars">
+                                        <div class="card-ad__price">$14.99</div>
+                                        <div class="card-ad__rating star">
+                                            <img class="star__item" src="img/icons/yellow_star.svg" alt="yellow_star">
+                                            <img class="star__item" src="img/icons/yellow_star.svg" alt="yellow_star">
+                                            <img class="star__item" src="img/icons/yellow_star.svg" alt="yellow_star">
+                                            <img class="star__item" src="img/icons/yellow_star.svg" alt="yellow_star">
+                                            <img class="star__item" src="img/icons/gray_star.svg" alt="gray_star">
                                         </div>
                                     </div>
                                 </div>
 
-
-                                <div class="card-little">
-                                    <a href="#" class="card-little__image">
+                                <div class="card-ad">
+                                    <a href="#" class="card-ad__image">
                                         <img src="img/products/corn.avif" alt="Corn">
                                     </a>
-                                    <div class="card-little__body">
-                                        <a href="#" class="card-little__title">Corn</a>
-                                        <div class="card-little__activ">
-                                            <a href="#" class="card-little__bag"><img src="img/icons/bag.svg"
-                                                    alt="icon bag"></a>
-                                            <a href="#" class="card-little__view"><img src="img/icons/eye.svg"
+                                    <div class="card-ad__body">
+                                        <a href="#" class="card-ad__title">Corn</a>
+                                        <div class="card-ad__activ activ-ad">
+                                            <a href="#" class="activ-ad__bag"><img src="img/icons/white_bag.svg"
+                                                    alt="cart"></a>
+                                            <a href="#" class="activ-ad__view"><img src="img/icons/eye.svg"
                                                     alt="icon eye"></a>
-                                            <a href="#" class="card-little__wishlist"><img src="img/icons/heart.svg"
-                                                    alt="icon heart"></a>
+                                            <a href="#" class="activ-ad__wishlist"><img src="img/icons/heart.svg"
+                                                    alt="icon icon"></a>
                                         </div>
-                                        <div class="card-little__price">$14.99</div>
-                                        <div class="card-little__rating">
-                                            <img src="img/icons/stars.svg" alt="icons stars">
+                                        <div class="card-ad__price">$14.99</div>
+                                        <div class="card-ad__rating star">
+                                            <img class="star__item" src="img/icons/yellow_star.svg" alt="yellow_star">
+                                            <img class="star__item" src="img/icons/yellow_star.svg" alt="yellow_star">
+                                            <img class="star__item" src="img/icons/yellow_star.svg" alt="yellow_star">
+                                            <img class="star__item" src="img/icons/yellow_star.svg" alt="yellow_star">
+                                            <img class="star__item" src="img/icons/gray_star.svg" alt="gray_star">
                                         </div>
                                     </div>
                                 </div>
 
-
-                                <div class="card-little">
-                                    <a href="#" class="card-little__image">
+                                <div class="card-ad">
+                                    <a href="#" class="card-ad__image">
                                         <img src="img/products/cauliflower.avif" alt="Fresh cauliflower">
                                     </a>
-                                    <div class="card-little__body">
-                                        <a href="#" class="card-little__title">Fresh cauliflower</a>
-                                        <div class="card-little__activ">
-                                            <a href="#" class="card-little__bag"><img src="img/icons/bag.svg"
-                                                    alt="icon bag"></a>
-                                            <a href="#" class="card-little__view"><img src="img/icons/eye.svg"
+                                    <div class="card-ad__body">
+                                        <a href="#" class="card-ad__title">Fresh cauliflower</a>
+                                        <div class="card-ad__activ activ-ad">
+                                            <a href="#" class="activ-ad__bag"><img src="img/icons/white_bag.svg"
+                                                    alt="cart"></a>
+                                            <a href="#" class="activ-ad__view"><img src="img/icons/eye.svg"
                                                     alt="icon eye"></a>
-                                            <a href="#" class="card-little__wishlist"><img src="img/icons/heart.svg"
-                                                    alt="icon heart"></a>
+                                            <a href="#" class="activ-ad__wishlist"><img src="img/icons/heart.svg"
+                                                    alt="icon icon"></a>
                                         </div>
-                                        <div class="card-little__price">$14.99</div>
-                                        <div class="card-little__rating">
-                                            <img src="img/icons/stars.svg" alt="icons stars">
+                                        <div class="card-ad__price">$14.99</div>
+                                        <div class="card-ad__rating star">
+                                            <img class="star__item" src="img/icons/yellow_star.svg" alt="yellow_star">
+                                            <img class="star__item" src="img/icons/yellow_star.svg" alt="yellow_star">
+                                            <img class="star__item" src="img/icons/yellow_star.svg" alt="yellow_star">
+                                            <img class="star__item" src="img/icons/yellow_star.svg" alt="yellow_star">
+                                            <img class="star__item" src="img/icons/gray_star.svg" alt="gray_star">
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <!--bannar_2-->
 
-                            <div class="bannar">
-                                <img class="bannar__image" src="img/products/bannar_2.avif" alt="bannar">
+                            <div class="ad__bannar ad__bannar--grid-line bannar">
+                                <img class="bannar__image" src="img/products/bannar_2.avif" alt="image bannar">
                                 <div class="bannar__content content-bannar">
                                     <h3 class="content-bannar__title">Hot Sale</h3>
                                     <div class="content-bannar__sale content-bannar__sale--color">
@@ -490,7 +522,7 @@
                             </div>
                         </div>
                     </div>
-                </section>
+                </div>
             </div>
         </main>
         <footer class="footer">

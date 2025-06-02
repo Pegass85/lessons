@@ -38,3 +38,31 @@ h6 {
 	font-size: inherit;
 }
 
+/* FORM */
+input,
+button,
+textarea {
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+	color: inherit;
+	background-color: transparent;
+}
+input,
+textarea {
+	width: 100%;
+}
+button,
+select,
+option {
+	cursor: pointer;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+	appearance: none;
+}
+label {
+	display: block;
+}
