@@ -1,0 +1,241 @@
+@import url("reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: rgb(242, 247, 238);
+    background-color: #2b213d;
+    /*font-size: 16px; за замовченням*/
+    font-size: 0.875rem; /*14px*/
+  }
+  
+  .wrapper {
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+      overflow: clip;
+  }
+  
+  .wrapper > main {
+    flex-grow: 1;
+  }
+  
+  [class*="__container"] {
+    max-width: 87.5rem;
+    margin: 0 auto;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+
+  .page {
+    padding: 3.125rem 0;
+  }
+
+ .page__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page__container > img,
+.page__container > div,
+.page__container > p {
+  margin-bottom: 2.25rem;
+}
+
+.page__container > div,
+.page__container > p {
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+}
+
+.title {
+  color: #def55f;
+  font-size: 1.25rem;
+  line-height: 1.25;
+  margin-bottom: 1.25em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media (max-width: 50em) {
+  .title {
+    font-size: 1rem;
+  }
+}
+
+.hero__image {
+  border-radius: 1.25rem;
+  aspect-ratio: 1 / 1;
+  width: 80vmin;
+  height: 80vmin;
+  max-width: 100%;
+}
+
+.calc {
+  width: calc(100% - 1.25rem);
+  background-color: #fa9806;
+  color: #2b213d;
+  padding: 0.9375rem;
+  border-radius: 0.25rem;
+  font-size: 1.25rem;
+}
+
+.clamp {
+  font-size: clamp(1.25rem, 5vw, 3rem);
+}
+
+.minmax {
+  width: min(25rem, 100%);
+  background-color: #fa9806;
+  color: #2b213d;
+  font-size: 1.25rem;
+  padding: 0.9375rem;
+  border-radius: 0.25rem;
+}
+
+:root {
+  --colorMain: #27c8f0;
+  --colorMain2: #def55f;
+}
+
+.block {
+  color: var(--colorMain);
+}
+
+.content {
+  --colorMain2: #ee1bb9;
+  color: var( --colorMain2);
+}
+
+.text {
+  color: var( --colorMain2);
+}
+
+/*на менших екранах не буде відображатися посилання */
+.pointer-events  {
+  pointer-events: none;
+}
+
+@media (min-width: 50em) {
+  .pointer-events  {
+    pointer-events: auto;
+  }
+}
+
+/*
+html {
+  scroll-behavior: smooth;
+}*/
+
+.cursor {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	padding: 1rem;
+	font-family: sans-serif;
+  text-transform: uppercase;
+}
+.cursor-item {
+	padding: 1rem;
+	background: #eb1ab6;
+	color: #380222;
+	border-radius: 0.25rem;
+	min-width: 8rem;
+	text-align: center;
+	font-size: 1rem;
+	transition: 0.5s;
+}
+.cursor-item:hover {
+	background: #380222;
+  color: #eb1ab6;
+}
+.cursor-default {
+	cursor: default;
+}
+.cursor-pointer {
+	cursor: pointer;
+}
+.cursor-text {
+	cursor: text;
+}
+.cursor-move {
+	cursor: move;
+}
+.cursor-crosshair {
+	cursor: crosshair;
+}
+.cursor-wait {
+	cursor: wait;
+}
+.cursor-not-allowed {
+	cursor: not-allowed;
+}
+.cursor-grab {
+	cursor: grab;
+}
+.cursor-zoom-in {
+	cursor: zoom-in;
+}
+
+.vertical {
+  display: inline-flex;
+  gap: 1.5rem; 
+}
+
+.vertical-text {
+ writing-mode: vertical-lr;
+}
+
+.vertical-orientation {
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  color: #eb1ab6;
+}
+
+.vertical-mirror {
+  writing-mode: vertical-lr;
+  transform: scale(-1, 1);
+  color: #78a9f3;
+}
+
+/*
+Логічнь властивості
+
+width- завжди по горизонталі, відносно вьюпорту. використовуємо inline-size-властивість яка рухається по тексту 
+height- змінюємо на block-size
+
+max-block-size;
+max-inline-size;
+min-block-size;
+min-inline-size;
+
+padding-left -> padding-inline-start; 
+padding-right -> padding-inline-end; 
+padding-top -> padding-block-start;
+padding-right -> padding-block-end;
+*/
+
+/*
+.post {
+  container-type: inline-size;
+}
+
+.title {
+  font-size: 3rem;
+}
+
+@container (min-width: 43.75em){
+
+.title {
+  font-size: 1.5rem;
+}
+}*/
+
+
+.lightning {
+background-color: #fced1c;
+inline-size: 9.375rem;
+block-size: 9.375rem;
+clip-path: polygon(19% 50%, 57% 0, 51% 48%, 73% 49%, 49% 69%, 14% 100%, 41% 50%);
+}
