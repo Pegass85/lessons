@@ -1,0 +1,137 @@
+@use "sass:math";
+@use "_reset.scss";
+@use "_mixins.scss" as *;
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: rgb(242, 247, 238);
+    background-color: #2b213d;
+    /*font-size: 0.875rem; /*14px*/
+  }
+  
+  .wrapper {
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+      overflow: clip;
+  }
+  
+  .wrapper > main {
+    flex-grow: 1;
+  }
+  
+  [class*="__container"] {
+    max-width: 87.5rem;
+    margin: 0 auto;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+
+  .page {
+    padding: 3.125rem 0;
+  }
+/*
+  .block {
+
+		// .block__container
+
+		&__container {
+		}
+
+		// .block__title
+
+		&__title {
+		}
+
+		// .block__items
+
+		&__items {
+		}
+
+		// .block__item
+
+		&__item {
+		}
+
+		// .block__item--red
+
+		&__item--red {
+		}
+}
+*/
+
+.button {
+  padding: 10px 20px;
+  font-size: medium;
+  background-color: #fff;
+}
+//ми бачимо, що параметри кнопки однакові, але є одна різниця, тоді ми//
+//підтягуємо всі параметри кнопки з допомогою @extend і дописуємо відмінні стилі//
+.page__button {
+  @extend .button; 
+  padding: 20px;
+}
+
+// Шаблон кнопки //
+
+%button {
+  padding: 5px 20px;
+  font-size: 20px;
+  background-color: #0be78b;
+}
+
+.page__button {
+  @extend %button; 
+  border: 1px solid #0f6d46;
+  background-color: #fff;
+}
+ 
+//запис посилання, яке на пристроях де є мишка, міняє колір на aqua //
+// а на мобілках та планшетах, ця функція відсутня//
+.link {
+  @media (any-hover: hover), (pointer: fine) {
+    &:hover {
+      color: aqua;
+    }
+  }
+}
+
+.block__title {
+  font-size: 55px;
+}
+
+.block__title {
+  	@include adaptiveValue("font-size", 55, 20, 0, 800, 400);
+}
+
+// Приклад виліту списку каскадом//
+
+.list {
+	color: #80e720;
+	&__item {
+		font-size: 20px;
+		visibility: hidden;
+		transform: translate(-100%, 0);
+		opacity: 0;
+		animation: show-items 1s ease forwards;
+		&:not(:last-child) {
+			margin-bottom: 20px;
+		}
+		@for $i from 1 through 7 {
+			&:nth-child(#{$i}) {
+				$delay: ($i - 1) * 0.2;
+				animation-delay: #{$delay}s;
+			}
+		}
+	}
+}
+
+@keyframes show-items {
+	0% {
+	}
+	100% {
+		opacity: 1;
+		visibility: visible;
+		transform: translate(0px, 0%);
+	}
+}
