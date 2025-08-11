@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
@@ -644,7 +645,7 @@
                             <div class="item-sale__body">
                                 <div class="item-sale__label">Best Deals</div>
                                 <h4 class="item-sale__title">Sale of the Month</h4>
-                                <div data-coundown="2025-8-6" class="item-sale__countdown countdown">
+                                <div data-coundown="2025-8-15" class="item-sale__countdown countdown">
                                     <div class="countdown__timer">
                                         <div class="countdown__digits">
                                             <span>00</span>
@@ -745,7 +746,7 @@
                                         <div class="rating__quantity">(524 Feedback)</div>
                                     </form>
                                 </div>
-                                <div data-coundown="2025-7-29"
+                                <div data-coundown="2025-8-12"
                                     class="item-products__countdown countdown countdown--mini">
                                     <div class="countdown__label">Hurry up! Offer ends In:</div>
                                     <div class="countdown__timer">
@@ -1109,6 +1110,464 @@
                     </div>
                 </div>
             </section>
+            <section class="page__banner sale-banner">
+                <div class="sale-banner__container">
+                    <div class="sale-banner__body">
+                        <div class="sale-banner__content">
+                            <h5 class="sale-banner__title">Summer Sale</h5>
+                            <div class="sale-banner__value"><span>37%</span> OFF</div>
+                            <div class="sale-banner__text">
+                                <p>Free on all your order, Free Shipping and 30 days money-back guarantee</p>
+                            </div>
+                            <a href="#" class="sale-banner__button button button--arrow">Shop Now</a>
+                        </div>
+                        <img src="img/bannars/bannar_sale.jpg" class="sale-banner__image" alt="Image">
+                    </div>
+                </div>
+            </section>
+            <section class="page__popular-products popular-products">
+                <div class="popular-products__container">
+                    <div class="popular-products__header block-header block-header--margin">
+                        <h2 class="block-header__title title">Featured Products</h2>
+                        <a href="#" class="block-header__link link-arrow">View All</a>
+                    </div>
+                    <div class="products">
+                        <article class="products__item item-products">
+                            <div class="item-products__labels">
+                                <a href="#" class="item-products__label item-products__label--sale">Sale
+                                    <span>50%</span></a>
+                            </div>
+                            <div class="item-products__actions">
+                                <a href="#" class="item-products__action item-products__action--icon-favorite"></a>
+                                <a href="#" class="item-products__action item-products__action--icon-eye"></a>
+                            </div>
+                            <a href="#" class="item-products__picture">
+                                <img src="img/products/apple.avif" class="item-products__image" alt="Image">
+                            </a>
+                            <div class="item-products__body">
+                                <div class="item-products__content">
+                                    <h3 class="item-products__title">
+                                        <a href="#" class="item-products__link-title">Green Apple</a>
+                                    </h3>
+                                    <div class="item-products__prices">
+                                        <div class="item-products__current">$14.99</div>
+                                        <div class="item-products__old">$20.99</div>
+                                    </div>
+                                    <form action="#" class="item-products__rating rating">
+                                        <div class="rating__items">
+                                            <input disabled type="radio" value="5" name="rating" class="rating__item">
+                                            <input disabled type="radio" value="4" name="rating" class="rating__item">
+                                            <input disabled checked type="radio" value="3" name="rating"
+                                                class="rating__item">
+                                            <input disabled type="radio" value="2" name="rating" class="rating__item">
+                                            <input disabled type="radio" value="1" name="rating" class="rating__item">
+                                        </div>
+                                    </form>
+                                </div>
+                                <button class="item-products__add-to-cart add-to-cart"></button>
+                            </div>
+                        </article>
+                        <article class="products__item item-products">
+                            <div class="item-products__actions">
+                                <a href="#" class="item-products__action item-products__action--icon-favorite"></a>
+                                <a href="#" class="item-products__action item-products__action--icon-eye"></a>
+                            </div>
+                            <a href="#" class="item-products__picture">
+                                <img src="img/products/cabbage.avif" class="item-products__image" alt="Image">
+                            </a>
+                            <div class="item-products__body">
+                                <div class="item-products__content">
+                                    <h3 class="item-products__title">
+                                        <a href="#" class="item-products__link-title">Chinese cabbage</a>
+                                    </h3>
+                                    <div class="item-products__prices">
+                                        <div class="item-products__current">$12.00</div>
+                                    </div>
+                                    <form action="#" class="item-products__rating rating">
+                                        <div class="rating__items">
+                                            <input disabled checked type="radio" value="5" name="rating"
+                                                class="rating__item">
+                                            <input disabled type="radio" value="4" name="rating" class="rating__item">
+                                            <input disabled type="radio" value="3" name="rating" class="rating__item">
+                                            <input disabled type="radio" value="2" name="rating" class="rating__item">
+                                            <input disabled type="radio" value="1" name="rating" class="rating__item">
+                                        </div>
+                                    </form>
+                                </div>
+                                <button class="item-products__add-to-cart add-to-cart"></button>
+                            </div>
+                        </article>
+                        <article class="products__item item-products">
+                            <div class="item-products__actions">
+                                <a href="#" class="item-products__action item-products__action--icon-favorite"></a>
+                                <a href="#" class="item-products__action item-products__action--icon-eye"></a>
+                            </div>
+                            <a href="#" class="item-products__picture">
+                                <img src="img/products/lettuce.avif" class="item-products__image" alt="Image">
+                            </a>
+                            <div class="item-products__body">
+                                <div class="item-products__content">
+                                    <h3 class="item-products__title">
+                                        <a href="#" class="item-products__link-title">Green Lettuce</a>
+                                    </h3>
+                                    <div class="item-products__prices">
+                                        <div class="item-products__current">$9.00</div>
+                                    </div>
+                                    <form action="#" class="item-products__rating rating">
+                                        <div class="rating__items">
+                                            <input disabled checked type="radio" value="5" name="rating"
+                                                class="rating__item">
+                                            <input disabled type="radio" value="4" name="rating" class="rating__item">
+                                            <input disabled type="radio" value="3" name="rating" class="rating__item">
+                                            <input disabled type="radio" value="2" name="rating" class="rating__item">
+                                            <input disabled type="radio" value="1" name="rating" class="rating__item">
+                                        </div>
+                                    </form>
+                                </div>
+                                <button class="item-products__add-to-cart add-to-cart"></button>
+                            </div>
+                        </article>
+                        <article class="products__item item-products">
+                            <div class="item-products__actions">
+                                <a href="#" class="item-products__action item-products__action--icon-favorite"></a>
+                                <a href="#" class="item-products__action item-products__action--icon-eye"></a>
+                            </div>
+                            <a href="#" class="item-products__picture">
+                                <img src="img/products/eggplant.webp" class="item-products__image" alt="Image">
+                            </a>
+                            <div class="item-products__body">
+                                <div class="item-products__content">
+                                    <h3 class="item-products__title">
+                                        <a href="#" class="item-products__link-title">Eggplant</a>
+                                    </h3>
+                                    <div class="item-products__prices">
+                                        <div class="item-products__current">$34.00</div>
+                                    </div>
+                                    <form action="#" class="item-products__rating rating">
+                                        <div class="rating__items">
+                                            <input disabled type="radio" value="5" name="rating" class="rating__item">
+                                            <input disabled checked type="radio" value="4" name="rating"
+                                                class="rating__item">
+                                            <input disabled type="radio" value="3" name="rating" class="rating__item">
+                                            <input disabled type="radio" value="2" name="rating" class="rating__item">
+                                            <input disabled type="radio" value="1" name="rating" class="rating__item">
+                                        </div>
+                                    </form>
+                                </div>
+                                <button class="item-products__add-to-cart add-to-cart"></button>
+                            </div>
+                        </article>
+                        <article class="products__item item-products">
+                            <div class="item-products__actions">
+                                <a href="#" class="item-products__action item-products__action--icon-favorite"></a>
+                                <a href="#" class="item-products__action item-products__action--icon-eye"></a>
+                            </div>
+                            <a href="#" class="item-products__picture">
+                                <img src="img/products/potatos.webp" class="item-products__image" alt="Image">
+                            </a>
+                            <div class="item-products__body">
+                                <div class="item-products__content">
+                                    <h3 class="item-products__title">
+                                        <a href="#" class="item-products__link-title">Big Potatoes</a>
+                                    </h3>
+                                    <div class="item-products__prices">
+                                        <div class="item-products__current">$20.00</div>
+                                    </div>
+                                    <form action="#" class="item-products__rating rating">
+                                        <div class="rating__items">
+                                            <input disabled type="radio" value="5" name="rating" class="rating__item">
+                                            <input disabled type="radio" value="4" name="rating" class="rating__item">
+                                            <input disabled checked type="radio" value="3" name="rating"
+                                                class="rating__item">
+                                            <input disabled type="radio" value="2" name="rating" class="rating__item">
+                                            <input disabled type="radio" value="1" name="rating" class="rating__item">
+                                        </div>
+                                    </form>
+                                </div>
+                                <button class="item-products__add-to-cart add-to-cart"></button>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <section class="page__news latest-news">
+                <div class="latest-news__container">
+                    <div class="latest-news__block-header block-header block-header--margin block-header--center">
+                        <h2 class="block-header__title title">Latest News</h2>
+                    </div>
+                    <div class="latest-news__items news-items">
+                        <article class="news-items__item news-item">
+                            <div class="news-item__header">
+                                <a href="#" class="news-item__image-link">
+                                    <img src="img/bannars/news_foto_1.avif" class="news-item__image" alt="Image">
+                                </a>
+                                <time datetime class="news-item__date">18 <small>nov</small></time>
+                            </div>
+                            <div class="news-item__body">
+                                <ul class="news-item__tags">
+                                    <li><a href="#" class="news-item__tag news-item__tag--icon-label">Food</a></li>
+                                    <li><a href="#" class="news-item__tag news-item__tag--icon-author">By Admin</a>
+                                    </li>
+                                    <li><a href="#" class="news-item__tag news-item__tag--icon-comments">65
+                                            Comments</a></li>
+                                </ul>
+                                <h4 class="news-item__title">
+                                    <a href="#" class="news-item__link-title">Curabitur porttitor orci eget neque
+                                        accumsan
+                                        venenatis. Nunc fermentum.</a>
+                                </h4>
+                                <a href="#" class="news-item__arrow-link link-arrow link-arrow--icon-arrow">Read
+                                    More</a>
+                            </div>
+                        </article>
+                        <article class="latest-news__item news-item">
+                            <div class="news-item__header">
+                                <a href="#" class="news-item__image-link">
+                                    <img src="img/bannars/news_foto_2.avif" class="news-item__image" alt="Image">
+                                </a>
+                                <time datetime class="news-item__date">18 <small>nov</small></time>
+                            </div>
+                            <div class="news-item__body">
+                                <ul class="news-item__tags">
+                                    <li><a href="#" class="news-item__tag news-item__tag--icon-label">Food</a></li>
+                                    <li><a href="#" class="news-item__tag news-item__tag--icon-author">By Admin</a>
+                                    </li>
+                                    <li><a href="#" class="news-item__tag news-item__tag--icon-comments">65
+                                            Comments</a></li>
+                                </ul>
+                                <h4 class="news-item__title">
+                                    <a href="#" class="news-item__link-title">Curabitur porttitor orci eget neque
+                                        accumsan
+                                        venenatis. Nunc fermentum.</a>
+                                </h4>
+                                <a href="#" class="news-item__arrow-link link-arrow link-arrow--icon-arrow">Read
+                                    More</a>
+                            </div>
+                        </article>
+                        <article class="latest-news__item news-item">
+                            <div class="news-item__header">
+                                <a href="#" class="news-item__image-link">
+                                    <img src="img/bannars/news_foto_3.avif" class="news-item__image" alt="Image">
+                                </a>
+                                <time datetime class="news-item__date">18 <small>nov</small></time>
+                            </div>
+                            <div class="news-item__body">
+                                <ul class="news-item__tags">
+                                    <li><a href="#" class="news-item__tag news-item__tag--icon-label">Food</a></li>
+                                    <li><a href="#" class="news-item__tag news-item__tag--icon-author">By Admin</a>
+                                    </li>
+                                    <li><a href="#" class="news-item__tag news-item__tag--icon-comments">65
+                                            Comments</a></li>
+                                </ul>
+                                <h4 class="news-item__title">
+                                    <a href="#" class="news-item__link-title">Curabitur porttitor orci eget neque
+                                        accumsan
+                                        venenatis. Nunc fermentum.</a>
+                                </h4>
+                                <a href="#" class="news-item__arrow-link link-arrow link-arrow--icon-arrow">Read
+                                    More</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <section class="page__reviews reviews">
+                <div class="reviews__container">
+                    <div class="reviews__block-header block-header block-header--margin">
+                        <h2 class="block-header__title title">Client Testimonials</h2>
+                        <div class="block-header__slider-arrows">
+                            <button aria-label="Previous slide"
+                                class="block-header__slider-arrow block-header__slider-arrow--left block-header__slider-arrow--icon-arrow"></button>
+                            <button aria-label="Next slide"
+                                class="block-header__slider-arrow block-header__slider-arrow--right block-header__slider-arrow--icon-arrow"></button>
+                        </div>
+                    </div>
+                    <div class="reviews__slider slider-reviews swiper">
+                        <div class="slider-reviews__wrapper swiper-wrapper">
+                            <div class="slider-reviews__slide swiper-slide">
+                                <article class="item-review item-review--icon-quote">
+                                    <div class="item-review__text">
+                                        <p>Pellentesque eu nibh eget mauris congue mattis mattis nec tellus.
+                                            Phasellus imperdiet
+                                            elit eu magna dictum, bibendum cursus velit sodales. Donec sed neque
+                                            eget</p>
+                                    </div>
+                                    <div class="item-review__footer">
+                                        <div class="item-review__author author-review">
+                                            <figure class="author-review__picture">
+                                                <img src="img/avatar/user.jpg" class="author-review__avatar"
+                                                    alt="Image">
+                                            </figure>
+                                            <div class="author-review__body">
+                                                <h4 class="author-review__title">Robert Fox</h4>
+                                                <div class="author-review__type">Customer</div>
+                                            </div>
+                                        </div>
+                                        <form action="#" class="item-review__rating rating rating--big">
+                                            <div class="rating__items">
+                                                <input disabled type="radio" value="5" name="rating"
+                                                    class="rating__item">
+                                                <input disabled type="radio" value="4" name="rating"
+                                                    class="rating__item">
+                                                <input disabled checked type="radio" value="3" name="rating"
+                                                    class="rating__item">
+                                                <input disabled type="radio" value="2" name="rating"
+                                                    class="rating__item">
+                                                <input disabled type="radio" value="1" name="rating"
+                                                    class="rating__item">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="slider-reviews__slide swiper-slide">
+                                <article class="item-review item-review--icon-quote">
+                                    <div class="item-review__text">
+                                        <p>Pellentesque eu nibh eget mauris congue mattis mattis nec tellus.
+                                            Phasellus imperdiet
+                                            elit eu magna dictum, bibendum cursus velit sodales. Donec sed neque
+                                            eget</p>
+                                    </div>
+                                    <div class="item-review__footer">
+                                        <div class="item-review__author author-review">
+                                            <figure class="author-review__picture">
+                                                <img src="img/avatar/user_03.jpg" class="author-review__avatar"
+                                                    alt="Image">
+                                            </figure>
+                                            <div class="author-review__body">
+                                                <h4 class="author-review__title">Eleanor Pena</h4>
+                                                <div class="author-review__type">Customer</div>
+                                            </div>
+                                        </div>
+                                        <form action="#" class="item-review__rating rating rating--big">
+                                            <div class="rating__items">
+                                                <input disabled type="radio" value="5" name="rating"
+                                                    class="rating__item">
+                                                <input disabled type="radio" value="4" name="rating"
+                                                    class="rating__item">
+                                                <input disabled checked type="radio" value="3" name="rating"
+                                                    class="rating__item">
+                                                <input disabled type="radio" value="2" name="rating"
+                                                    class="rating__item">
+                                                <input disabled type="radio" value="1" name="rating"
+                                                    class="rating__item">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="slider-reviews__slide swiper-slide">
+                                <article class="item-review item-review--icon-quote">
+                                    <div class="item-review__text">
+                                        <p>Pellentesque eu nibh eget mauris congue mattis mattis nec tellus.
+                                            Phasellus imperdiet
+                                            elit eu magna dictum, bibendum cursus velit sodales. Donec sed neque
+                                            eget</p>
+                                    </div>
+                                    <div class="item-review__footer">
+                                        <div class="item-review__author author-review">
+                                            <figure class="author-review__picture">
+                                                <img src="img/avatar/user_02.jpg" class="author-review__avatar"
+                                                    alt="Image">
+                                            </figure>
+                                            <div class="author-review__body">
+                                                <h4 class="author-review__title">Dianne Russell</h4>
+                                                <div class="author-review__type">Customer</div>
+                                            </div>
+                                        </div>
+                                        <form action="#" class="item-review__rating rating rating--big">
+                                            <div class="rating__items">
+                                                <input disabled type="radio" value="5" name="rating"
+                                                    class="rating__item">
+                                                <input disabled type="radio" value="4" name="rating"
+                                                    class="rating__item">
+                                                <input disabled checked type="radio" value="3" name="rating"
+                                                    class="rating__item">
+                                                <input disabled type="radio" value="2" name="rating"
+                                                    class="rating__item">
+                                                <input disabled type="radio" value="1" name="rating"
+                                                    class="rating__item">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="slider-reviews__slide swiper-slide">
+                                <article class="item-review item-review--icon-quote">
+                                    <div class="item-review__text">
+                                        <p>Pellentesque eu nibh eget mauris congue mattis mattis nec tellus.
+                                            Phasellus imperdiet
+                                            elit eu magna dictum, bibendum cursus velit sodales. Donec sed neque
+                                            eget</p>
+                                    </div>
+                                    <div class="item-review__footer">
+                                        <div class="item-review__author author-review">
+                                            <figure class="author-review__picture">
+                                                <img src="img/avatar/user_03.jpg" class="author-review__avatar"
+                                                    alt="Image">
+                                            </figure>
+                                            <div class="author-review__body">
+                                                <h4 class="author-review__title">Eleanor Pena</h4>
+                                                <div class="author-review__type">Customer</div>
+                                            </div>
+                                        </div>
+                                        <form action="#" class="item-review__rating rating rating--big">
+                                            <div class="rating__items">
+                                                <input disabled type="radio" value="5" name="rating"
+                                                    class="rating__item">
+                                                <input disabled type="radio" value="4" name="rating"
+                                                    class="rating__item">
+                                                <input disabled checked type="radio" value="3" name="rating"
+                                                    class="rating__item">
+                                                <input disabled type="radio" value="2" name="rating"
+                                                    class="rating__item">
+                                                <input disabled type="radio" value="1" name="rating"
+                                                    class="rating__item">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="page__partners partners">
+                <div class="partners__container">
+                    <ul class="partners__list">
+                        <li class="partners__item">
+                            <a href="#" class="partners__link">
+                                <img src="img/partners/01.svg" alt="Image">
+                            </a>
+                        </li>
+                        <li class="partners__item">
+                            <a href="#" class="partners__link">
+                                <img src="img/partners/02.svg" alt="Image">
+                            </a>
+                        </li>
+                        <li class="partners__item">
+                            <a href="#" class="partners__link">
+                                <img src="img/partners/03.svg" alt="Image">
+                            </a>
+                        </li>
+                        <li class="partners__item">
+                            <a href="#" class="partners__link">
+                                <img src="img/partners/04.svg" alt="Image">
+                            </a>
+                        </li>
+                        <li class="partners__item">
+                            <a href="#" class="partners__link">
+                                <img src="img/partners/05.svg" alt="Image">
+                            </a>
+                        </li>
+                        <li class="partners__item">
+                            <a href="#" class="partners__link">
+                                <img src="img/partners/06.svg" alt="Image">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </main>
         <footer class="footer">
             <div class="footer__container">
@@ -1206,6 +1665,7 @@
                 </div>
         </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 
