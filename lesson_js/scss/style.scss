@@ -1,0 +1,185 @@
+@use "sass:math";
+@use "_reset.scss";
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: rgb(242, 247, 238);
+    background-color: #2b213d;
+    // opacity: 0;
+    // transition: opacity 3s;
+  }
+
+  // html.loaded body {
+  //   opacity: 1;
+  // }
+
+  [class*="__container"] {
+    max-width: 87.5rem;
+    margin: 0 auto;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+
+  .page {
+    padding: 2rem;
+  }
+
+.button {
+  padding: 0.9375rem;
+  background-color: #72f73d;
+  text-transform: uppercase;
+  color: #2b213d;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  letter-spacing: 1.5px;
+  transition: background-color 0.3s;
+}
+
+
+html .active.button  {
+  background-color: #f18241;
+}
+
+// .button.active {
+//   background-color: #f18241;
+// }
+
+.button:hover {
+  background-color: #03ce14;
+}
+
+.parent-block {
+  width: 300px;
+  height: 300px;
+  opacity: 0;
+  transition: transform 0.3s, opacity 0.3s;
+  transform: rotate(-50deg);
+}
+
+.parent-block.animate {
+  opacity: 1;
+  transform: rotate(0deg);
+}
+
+.block {
+  width: 300px;
+  height: 300px;
+  background-color: #03ce14;
+}
+
+/* завдання 2*/
+body {
+  opacity: 0;
+  transition: opacity 2s; 
+}
+
+body.loaded {
+  opacity: 1;
+}
+/* завдання 3*/
+header, main, footer {
+  padding: 20px;
+}
+
+header {
+  background-color: rgb(186, 243, 30)
+}
+
+footer {
+  background-color: rgb(128, 3, 128);
+  transition: background-color 0.3s ease;
+}
+
+/*
+задача 1
+'''js
+const items = document.querySelectorAll('.item');
+
+items.forEach(item => {
+    item.addEventListener('click', () => {
+        item.classList.toggle('active');
+    });
+});
+```
+задача 2
+```css
+body {
+  opacity: 0;
+  transition: opacity 2s; 
+}
+
+body.loaded {
+  opacity: 1;
+}
+```
+```js
+window.addEventListener('load', () => {
+    document.body.classList.add('loaded');
+});
+  ```
+задача 3
+```css
+header, main, footer {
+  padding: 20px;
+}
+
+header {
+  background-color: rgb(186, 243, 30)
+}
+
+footer {
+  background-color: rgb(128, 3, 128);
+  transition: background-color 0.3s ease;
+}
+```
+```js
+const header = document.querySelector('header');
+const footer = document.querySelector('footer');
+
+header.addEventListener('mouseenter', () => {
+  footer.style.backgroundColor = 'yellow'; 
+});
+
+header.addEventListener('mouseleave', () => {
+  footer.style.backgroundColor = 'purple';
+});
+```
+
+задача 4
+```js
+const options = {
+    root: null,
+    rootMargin: "0px 0px 0px 0px",
+    threshold: 1,
+  };
+  
+  const callback = (entries, observer) => {
+    entries.forEach(entry => {
+      const currentElement = entry.target;
+      if (entry.isIntersecting) {
+        observer.unobserve(currentElement); 
+  
+        let i = 0;
+        const timer = setInterval(() => {
+          intervalFunction(i, currentElement);
+          i++;
+          if (i >= count) {
+            clearInterval(timer);
+          }
+        }, delay);
+      }
+    });
+  };
+  
+  const myItem = document.querySelector('.item');
+  const count = +myItem.dataset.count || 5;
+  const delay = +myItem.dataset.delay || 1000;
+  
+  const observer = new IntersectionObserver(callback, options);
+  observer.observe(myItem);
+  
+  function intervalFunction(i, elem) {
+    elem.textContent = `${i}`;
+  }
+```
+*/
