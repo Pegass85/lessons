@@ -119,7 +119,7 @@
                 </div>
             </div>
         </header>
-        <aside class="breadcrumbs">
+        <aside class="breadcrumbs breadcrumbs--margin">
             <div class="breadcrumbs__container">
                 <ul class="breadcrumbs__list">
                     <li class="breadcrumbs__item">
@@ -129,7 +129,7 @@
                         <a href="#" class="breadcrumbs__link">Categories</a>
                     </li>
                     <li class="breadcrumbs__item">
-                        <span class="breadcrumbs__link">Vegetables</span>
+                        <a href="#" class="breadcrumbs__link">Vegetables</a>
                     </li>
                 </ul>
             </div>
@@ -137,7 +137,476 @@
         </aside>
         <main class="catalog">
             <div class="catalog__container">
-
+                <form action="#" class="catalog__form">
+                    <div class="catalog__header header-catalog">
+                        <div class="header-catalog__filter">
+                            <button type="button"
+                                class="header-catalog__button button button--middle button--filter">Filter</button>
+                        </div>
+                        <div class="header-catalog__body">
+                            <div class="header-catalog__sort sort-catalog">
+                                <label class="sort-catalog__label">Sort by:</label>
+                                <div class="sort-catalog__body sort-catalog__body--icon-shevron">
+                                    <select name="form[sort]" class="sort-catalog__select">
+                                        <option class="sort-catalog__item">Latest</option>
+                                        <option class="sort-catalog__item">Newest</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="header-catalog__result"><span>52</span> Results Found</div>
+                        </div>
+                    </div>
+                    <div class="catalog__body">
+                        <aside class="catalog__filter filter">
+                            <div class="filter__body">
+                                <details open class="filter__item item-filter">
+                                    <summary class="item-filter__header">All Categories</summary>
+                                    <div class="item-filter__body">123</div>
+                                </details>
+                            </div>
+                        </aside>
+                        <div class="catalog__content">
+                            <div class="catalog__items products">
+                                <article class="products__item item-products">
+                                    <div class="item-products__labels">
+                                        <a href="#" class="item-products__label item-products__label--sale">Sale
+                                            <span>50%</span></a>
+                                        <a href="#" class="item-products__label item-products__label--best">Best
+                                            Sale</a>
+                                        <span class="item-products__label item-products__label--out">Out of Stock</span>
+                                    </div>
+                                    <div class="item-products__actions">
+                                        <a href="#"
+                                            class="item-products__action item-products__action--icon-favorite"></a>
+                                        <a href="#" class="item-products__action item-products__action--icon-eye"></a>
+                                    </div>
+                                    <a href="#" class="item-products__picture">
+                                        <img src="img/products/potatos.webp" class="item-products__image" alt="Image">
+                                    </a>
+                                    <div class="item-products__body">
+                                        <div class="item-products__content">
+                                            <h3 class="item-products__title">
+                                                <a href="#" class="item-products__link-title">Big Potatoes</a>
+                                            </h3>
+                                            <div class="item-products__prices">
+                                                <div class="item-products__current">$14.99</div>
+                                                <div class="item-products__old">$20.99</div>
+                                            </div>
+                                            <form action="#" class="item-products__rating rating">
+                                                <div class="rating__items">
+                                                    <input disabled type="radio" value="5" name="rating"
+                                                        class="rating__item">
+                                                    <input disabled type="radio" value="4" name="rating"
+                                                        class="rating__item">
+                                                    <input disabled checked type="radio" value="3" name="rating"
+                                                        class="rating__item">
+                                                    <input disabled type="radio" value="2" name="rating"
+                                                        class="rating__item">
+                                                    <input disabled type="radio" value="1" name="rating"
+                                                        class="rating__item">
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <button class="item-products__add-to-cart add-to-cart"></button>
+                                    </div>
+                                </article>
+                                <article class="products__item item-products">
+                                    <div class="item-products__labels">
+                                        <a href="#" class="item-products__label item-products__label--sale">Sale
+                                            <span>50%</span></a>
+                                    </div>
+                                    <div class="item-products__actions">
+                                        <a href="#"
+                                            class="item-products__action item-products__action--icon-favorite"></a>
+                                        <a href="#" class="item-products__action item-products__action--icon-eye"></a>
+                                    </div>
+                                    <a href="#" class="item-products__picture">
+                                        <img src="img/products/cabbage.avif" class="item-products__image" alt="Image">
+                                    </a>
+                                    <div class="item-products__body">
+                                        <div class="item-products__content">
+                                            <h3 class="item-products__title">
+                                                <a href="#" class="item-products__link-title">Chinese cabbage</a>
+                                            </h3>
+                                            <div class="item-products__prices">
+                                                <div class="item-products__current">$14.99</div>
+                                                <div class="item-products__old">$20.99</div>
+                                            </div>
+                                            <form action="#" class="item-products__rating rating">
+                                                <div class="rating__items">
+                                                    <input disabled checked type="radio" value="5" name="rating"
+                                                        class="rating__item">
+                                                    <input disabled type="radio" value="4" name="rating"
+                                                        class="rating__item">
+                                                    <input disabled type="radio" value="3" name="rating"
+                                                        class="rating__item">
+                                                    <input disabled type="radio" value="2" name="rating"
+                                                        class="rating__item">
+                                                    <input disabled type="radio" value="1" name="rating"
+                                                        class="rating__item">
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <button class="item-products__add-to-cart add-to-cart"></button>
+                                    </div>
+                                </article>
+                                <article class="products__item item-products">
+                                    <div class="item-products__labels">
+                                        <a href="#" class="item-products__label item-products__label--sale">Sale
+                                            <span>50%</span></a>
+                                    </div>
+                                    <div class="item-products__actions">
+                                        <a href="#"
+                                            class="item-products__action item-products__action--icon-favorite"></a>
+                                        <a href="#" class="item-products__action item-products__action--icon-eye"></a>
+                                    </div>
+                                    <a href="#" class="item-products__picture">
+                                        <img src="img/products/corn.avif" class="item-products__image" alt="Image">
+                                    </a>
+                                    <div class="item-products__body">
+                                        <div class="item-products__content">
+                                            <h3 class="item-products__title">
+                                                <a href="#" class="item-products__link-title">Corn</a>
+                                            </h3>
+                                            <div class="item-products__prices">
+                                                <div class="item-products__current">$14.99</div>
+                                                <div class="item-products__old">$20.99</div>
+                                            </div>
+                                            <form action="#" class="item-products__rating rating">
+                                                <div class="rating__items">
+                                                    <input disabled checked type="radio" value="5" name="rating"
+                                                        class="rating__item">
+                                                    <input disabled type="radio" value="4" name="rating"
+                                                        class="rating__item">
+                                                    <input disabled type="radio" value="3" name="rating"
+                                                        class="rating__item">
+                                                    <input disabled type="radio" value="2" name="rating"
+                                                        class="rating__item">
+                                                    <input disabled type="radio" value="1" name="rating"
+                                                        class="rating__item">
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <button class="item-products__add-to-cart add-to-cart"></button>
+                                    </div>
+                                </article>
+                                <article class="products__item item-products">
+                                    <div class="item-products__labels">
+                                        <a href="#" class="item-products__label item-products__label--sale">Sale
+                                            <span>50%</span></a>
+                                    </div>
+                                    <div class="item-products__actions">
+                                        <a href="#"
+                                            class="item-products__action item-products__action--icon-favorite"></a>
+                                        <a href="#" class="item-products__action item-products__action--icon-eye"></a>
+                                    </div>
+                                    <a href="#" class="item-products__picture">
+                                        <img src="img/products/eggplant.webp" class="item-products__image" alt="Image">
+                                    </a>
+                                    <div class="item-products__body">
+                                        <div class="item-products__content">
+                                            <h3 class="item-products__title">
+                                                <a href="#" class="item-products__link-title">Eggplant</a>
+                                            </h3>
+                                            <div class="item-products__prices">
+                                                <div class="item-products__current">$14.99</div>
+                                                <div class="item-products__old">$20.99</div>
+                                            </div>
+                                            <form action="#" class="item-products__rating rating">
+                                                <div class="rating__items">
+                                                    <input disabled checked type="radio" value="5" name="rating"
+                                                        class="rating__item">
+                                                    <input disabled type="radio" value="4" name="rating"
+                                                        class="rating__item">
+                                                    <input disabled type="radio" value="3" name="rating"
+                                                        class="rating__item">
+                                                    <input disabled type="radio" value="2" name="rating"
+                                                        class="rating__item">
+                                                    <input disabled type="radio" value="1" name="rating"
+                                                        class="rating__item">
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <button class="item-products__add-to-cart add-to-cart"></button>
+                                    </div>
+                                </article>
+                                <article class="products__item item-products">
+                                    <div class="item-products__labels">
+                                        <a href="#" class="item-products__label item-products__label--sale">Sale
+                                            <span>50%</span></a>
+                                    </div>
+                                    <div class="item-products__actions">
+                                        <a href="#"
+                                            class="item-products__action item-products__action--icon-favorite"></a>
+                                        <a href="#" class="item-products__action item-products__action--icon-eye"></a>
+                                    </div>
+                                    <a href="#" class="item-products__picture">
+                                        <img src="img/products/cauliflower.avif" class="item-products__image"
+                                            alt="Image">
+                                    </a>
+                                    <div class="item-products__body">
+                                        <div class="item-products__content">
+                                            <h3 class="item-products__title">
+                                                <a href="#" class="item-products__link-title">Fresh Cauliflower</a>
+                                            </h3>
+                                            <div class="item-products__prices">
+                                                <div class="item-products__current">$14.99</div>
+                                                <div class="item-products__old">$20.99</div>
+                                            </div>
+                                            <form action="#" class="item-products__rating rating">
+                                                <div class="rating__items">
+                                                    <input disabled checked type="radio" value="5" name="rating"
+                                                        class="rating__item">
+                                                    <input disabled type="radio" value="4" name="rating"
+                                                        class="rating__item">
+                                                    <input disabled type="radio" value="3" name="rating"
+                                                        class="rating__item">
+                                                    <input disabled type="radio" value="2" name="rating"
+                                                        class="rating__item">
+                                                    <input disabled type="radio" value="1" name="rating"
+                                                        class="rating__item">
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <button class="item-products__add-to-cart add-to-cart"></button>
+                                    </div>
+                                </article>
+                                <article class="products__item item-products">
+                                    <div class="item-products__labels">
+                                        <a href="#" class="item-products__label item-products__label--sale">Sale
+                                            <span>50%</span></a>
+                                        <a href="#" class="item-products__label item-products__label--best">Best
+                                            Sale</a>
+                                    </div>
+                                    <div class="item-products__actions">
+                                        <a href="#"
+                                            class="item-products__action item-products__action--icon-favorite"></a>
+                                        <a href="#" class="item-products__action item-products__action--icon-eye"></a>
+                                    </div>
+                                    <a href="#" class="item-products__picture">
+                                        <img src="img/products/apple.avif" class="item-products__image" alt="Image">
+                                    </a>
+                                    <div class="item-products__body">
+                                        <div class="item-products__content">
+                                            <h3 class="item-products__title">
+                                                <a href="#" class="item-products__link-title">Green Apple</a>
+                                            </h3>
+                                            <div class="item-products__prices">
+                                                <div class="item-products__current">$14.99</div>
+                                                <div class="item-products__old">$20.99</div>
+                                            </div>
+                                            <form action="#" class="item-products__rating rating">
+                                                <div class="rating__items">
+                                                    <input disabled type="radio" value="5" name="rating"
+                                                        class="rating__item">
+                                                    <input disabled type="radio" value="4" name="rating"
+                                                        class="rating__item">
+                                                    <input disabled checked type="radio" value="3" name="rating"
+                                                        class="rating__item">
+                                                    <input disabled type="radio" value="2" name="rating"
+                                                        class="rating__item">
+                                                    <input disabled type="radio" value="1" name="rating"
+                                                        class="rating__item">
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <button class="item-products__add-to-cart add-to-cart"></button>
+                                    </div>
+                                </article>
+                                <article class="products__item item-products">
+                                    <div class="item-products__labels">
+                                        <a href="#" class="item-products__label item-products__label--sale">Sale
+                                            <span>50%</span></a>
+                                    </div>
+                                    <div class="item-products__actions">
+                                        <a href="#"
+                                            class="item-products__action item-products__action--icon-favorite"></a>
+                                        <a href="#" class="item-products__action item-products__action--icon-eye"></a>
+                                    </div>
+                                    <a href="#" class="item-products__picture">
+                                        <img src="img/products/capsicum_red.jpg" class="item-products__image"
+                                            alt="Image">
+                                    </a>
+                                    <div class="item-products__body">
+                                        <div class="item-products__content">
+                                            <h3 class="item-products__title">
+                                                <a href="#" class="item-products__link-title">Red Chili</a>
+                                            </h3>
+                                            <div class="item-products__prices">
+                                                <div class="item-products__current">$14.99</div>
+                                                <div class="item-products__old">$20.99</div>
+                                            </div>
+                                            <form action="#" class="item-products__rating rating">
+                                                <div class="rating__items">
+                                                    <input disabled checked type="radio" value="5" name="rating"
+                                                        class="rating__item">
+                                                    <input disabled type="radio" value="4" name="rating"
+                                                        class="rating__item">
+                                                    <input disabled type="radio" value="3" name="rating"
+                                                        class="rating__item">
+                                                    <input disabled type="radio" value="2" name="rating"
+                                                        class="rating__item">
+                                                    <input disabled type="radio" value="1" name="rating"
+                                                        class="rating__item">
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <button class="item-products__add-to-cart add-to-cart"></button>
+                                    </div>
+                                </article>
+                                <article class="products__item item-products">
+                                    <div class="item-products__labels">
+                                        <a href="#" class="item-products__label item-products__label--sale">Sale
+                                            <span>50%</span></a>
+                                    </div>
+                                    <div class="item-products__actions">
+                                        <a href="#"
+                                            class="item-products__action item-products__action--icon-favorite"></a>
+                                        <a href="#" class="item-products__action item-products__action--icon-eye"></a>
+                                    </div>
+                                    <a href="#" class="item-products__picture">
+                                        <img src="img/products/mango.jpg" class="item-products__image" alt="Image">
+                                    </a>
+                                    <div class="item-products__body">
+                                        <div class="item-products__content">
+                                            <h3 class="item-products__title">
+                                                <a href="#" class="item-products__link-title">Fresh Mango</a>
+                                            </h3>
+                                            <div class="item-products__prices">
+                                                <div class="item-products__current">$14.99</div>
+                                                <div class="item-products__old">$20.99</div>
+                                            </div>
+                                            <form action="#" class="item-products__rating rating">
+                                                <div class="rating__items">
+                                                    <input disabled checked type="radio" value="5" name="rating"
+                                                        class="rating__item">
+                                                    <input disabled type="radio" value="4" name="rating"
+                                                        class="rating__item">
+                                                    <input disabled type="radio" value="3" name="rating"
+                                                        class="rating__item">
+                                                    <input disabled type="radio" value="2" name="rating"
+                                                        class="rating__item">
+                                                    <input disabled type="radio" value="1" name="rating"
+                                                        class="rating__item">
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <button class="item-products__add-to-cart add-to-cart"></button>
+                                    </div>
+                                </article>
+                                <article class="products__item item-products">
+                                    <div class="item-products__labels">
+                                        <a href="#" class="item-products__label item-products__label--sale">Sale
+                                            <span>50%</span></a>
+                                    </div>
+                                    <div class="item-products__actions">
+                                        <a href="#"
+                                            class="item-products__action item-products__action--icon-favorite"></a>
+                                        <a href="#" class="item-products__action item-products__action--icon-eye"></a>
+                                    </div>
+                                    <a href="#" class="item-products__picture">
+                                        <img src="img/products/chili.avif" class="item-products__image" alt="Image">
+                                    </a>
+                                    <div class="item-products__body">
+                                        <div class="item-products__content">
+                                            <h3 class="item-products__title">
+                                                <a href="#" class="item-products__link-title">Green Chili</a>
+                                            </h3>
+                                            <div class="item-products__prices">
+                                                <div class="item-products__current">$14.99</div>
+                                                <div class="item-products__old">$20.99</div>
+                                            </div>
+                                            <form action="#" class="item-products__rating rating">
+                                                <div class="rating__items">
+                                                    <input disabled checked type="radio" value="5" name="rating"
+                                                        class="rating__item">
+                                                    <input disabled type="radio" value="4" name="rating"
+                                                        class="rating__item">
+                                                    <input disabled type="radio" value="3" name="rating"
+                                                        class="rating__item">
+                                                    <input disabled type="radio" value="2" name="rating"
+                                                        class="rating__item">
+                                                    <input disabled type="radio" value="1" name="rating"
+                                                        class="rating__item">
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <button class="item-products__add-to-cart add-to-cart"></button>
+                                    </div>
+                                </article>
+                                <article class="products__item item-products">
+                                    <div class="item-products__labels">
+                                        <a href="#" class="item-products__label item-products__label--sale">Sale
+                                            <span>50%</span></a>
+                                    </div>
+                                    <div class="item-products__actions">
+                                        <a href="#"
+                                            class="item-products__action item-products__action--icon-favorite"></a>
+                                        <a href="#" class="item-products__action item-products__action--icon-eye"></a>
+                                    </div>
+                                    <a href="#" class="item-products__picture">
+                                        <img src="img/products/capsicum.jpg" class="item-products__image" alt="Image">
+                                    </a>
+                                    <div class="item-products__body">
+                                        <div class="item-products__content">
+                                            <h3 class="item-products__title">
+                                                <a href="#" class="item-products__link-title">Green Capsicum</a>
+                                            </h3>
+                                            <div class="item-products__prices">
+                                                <div class="item-products__current">$14.99</div>
+                                                <div class="item-products__old">$20.99</div>
+                                            </div>
+                                            <form action="#" class="item-products__rating rating">
+                                                <div class="rating__items">
+                                                    <input disabled checked type="radio" value="5" name="rating"
+                                                        class="rating__item">
+                                                    <input disabled type="radio" value="4" name="rating"
+                                                        class="rating__item">
+                                                    <input disabled type="radio" value="3" name="rating"
+                                                        class="rating__item">
+                                                    <input disabled type="radio" value="2" name="rating"
+                                                        class="rating__item">
+                                                    <input disabled type="radio" value="1" name="rating"
+                                                        class="rating__item">
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <button class="item-products__add-to-cart add-to-cart"></button>
+                                    </div>
+                                </article>
+                            </div>
+                            <ul class="catalog__pages pages">
+                                <li class="pages__item">
+                                    <a href="#" class="pages__link pages__link--icon-shevron"></a>
+                                </li>
+                                <li class="pages__item">
+                                    <a href="#" class="pages__link pages__link--current">1</a>
+                                </li>
+                                <li class="pages__item">
+                                    <a href="#" class="pages__link">2</a>
+                                </li>
+                                <li class="pages__item">
+                                    <a href="#" class="pages__link">3</a>
+                                </li>
+                                <li class="pages__item">
+                                    <a href="#" class="pages__link">4</a>
+                                </li>
+                                <li class="pages__item">
+                                    <a href="#" class="pages__link">5</a>
+                                </li>
+                                <li class="pages__item">
+                                    <a href="#" class="pages__link">...</a>
+                                </li>
+                                <li class="pages__item">
+                                    <a href="#" class="pages__link">21</a>
+                                </li>
+                                <li class="pages__item">
+                                    <a href="#" class="pages__link pages__link--icon-shevron"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </form>
             </div>
         </main>
         <aside class="subscribe">

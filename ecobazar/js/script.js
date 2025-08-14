@@ -15,6 +15,7 @@ function windowLoad() {
 	coundown.length ? initCoundown(coundown) : null
 
 	dynamicAdaptHeader();
+	dynamicAdaptFilter();
 	slidersInit();
 }
 function dynamicAdaptHeader() {
@@ -45,11 +46,29 @@ function dynamicAdaptHeader() {
 		} else {
 			bottomContainer.insertAdjacentElement('beforeend', phoneHeader)
 			placeSearch.insertAdjacentElement('beforeend', searchHeader)
-
 			header.insertAdjacentElement("afterbegin", topHeader)
 		}
 		searchHeader.classList.toggle('--dynamic', media.matches)
 		phoneHeader.classList.toggle('--dynamic', media.matches)
+	}
+}
+function dynamicAdaptFilter() {
+	const filter = document.querySelector('.filter');
+	const filterPlace = document.querySelector('.header-catalog__filter');
+	const catalogBody = document.querySelector('.catalog__body');
+	if (filter) {
+		const media = window.matchMedia("(max-width: 767.98px)")
+		media.addEventListener("change", (e) => {
+			dynamicAdaptFilterInit(media)
+		})
+		dynamicAdaptFilterInit(media)
+	}
+	function dynamicAdaptFilterInit(media) {
+		if (media.matches) {
+			filterPlace.insertAdjacentElement('beforeend', filter)
+		} else {
+			catalogBody.insertAdjacentElement('afterbegin', filter)
+		}
 	}
 }
 function documentActions(e) {
@@ -74,6 +93,9 @@ function documentActions(e) {
 		document.body.classList.toggle('scroll-lock')
 		document.documentElement.classList.toggle('open-menu')
 	}
+	if (targetElement.closest('.header-catalog__button')) {
+		document.documentElement.classList.toggle('open-filter')
+	}
 	if (targetElement.closest('.add-to-cart')) {
 		const button = targetElement.closest('.add-to-cart')
 		const productItem = button.closest('.item-products')
@@ -83,7 +105,6 @@ function documentActions(e) {
 	}
 
 }
-
 function flyImage(productImage, cartHeader) {
 	const flyImg = document.createElement('img')
 	const speed = +productImage.dataset.speed || 1300
@@ -109,7 +130,6 @@ function flyImage(productImage, cartHeader) {
 		cartHeader.innerHTML = +cartHeader.innerHTML + 1
 	}, speed);
 }
-
 function initCoundown(coundown) {
 	coundown.forEach(coundownItem => {
 		initCoundownItem(coundownItem)
@@ -145,6 +165,7 @@ function initCoundownItem(coundownItem) {
 		}, 1000)
 	}
 }
+
 function slidersInit() {
 	if (document.querySelector('.slider-reviews')) {
 		const sliderReviews = new Swiper('.slider-reviews', {
@@ -175,3 +196,4 @@ function slidersInit() {
 		});
 	}
 }
+

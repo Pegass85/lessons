@@ -207,7 +207,7 @@
   transition: border-color 0.3s;
 
   &:focus-within {
-    border: 1px solid $successDark; // або $warning
+    border: 2px solid $successDark; // або $warning
   }
 
   &__input {

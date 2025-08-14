@@ -9,6 +9,7 @@
 @use "_footer.scss";
 //Pages
 @use "_home.scss";
+@use "_catalog.scss";
 
 body {
 	font-family: "Poppins", sans-serif;
@@ -27,8 +28,8 @@ body {
 }
 
 .wrapper {
+	overflow: clip;
 	min-height: 100%;
-
 	display: flex;
 	flex-direction: column;
 	> main {

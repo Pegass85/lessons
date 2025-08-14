@@ -107,15 +107,14 @@
 	background-color: $success;
 	@include typography("M", 600);
 	color: $white;
-	transition: 
-	  background-color 0.3s,
-	  color 0.3s;
+	transition:
+		background-color 0.3s,
+		color 0.3s;
 
-&--white {
-	background-color: $white;
-	color: $success;
-}
-
+	&--white {
+		background-color: $white;
+		color: $success;
+	}
 	&--middle {
 		@include typography("S", 600);
 		padding-inline: toRem(32);
@@ -126,17 +125,30 @@
 		padding-inline: toRem(24);
 		padding-block: toRem(10);
 	}
-
 	&--arrow {
 		display: inline-flex;
 		justify-content: center;
 		flex-direction: row-reverse;
+		align-items: center;
 		gap: toRem(12);
-	&::before {
-		 content: "\e900";
-		 font-family: "iconfont"; 
-		@include typography("T");
+		&::before {
+			content: "\e900";
+			font-family: "iconfont";
+			@include typography("T");
+		}
 	}
+	&--filter {
+		display: inline-flex;
+		justify-content: center;
+		flex-direction: row-reverse;
+		align-items: center;
+		gap: toRem(12);
+		&::before {
+			content: "\e919";
+			line-height: 1 !important;
+			font-family: "iconfont";
+			@include typography("L");
+		}
 	}
 
 	@media (any-hover: hover) and (any-pointer: fine) {
@@ -242,6 +254,12 @@
 	background-color: $white;
 	transition: all 0.3s;
 	border: toRem(1) solid $grey1;
+
+	.catalog & {
+		margin: 0;
+		border-radius: toRem(8);
+	}
+
 	// outline: toRem(1) solid $grey1;
 	&::before {
 		content: "";
@@ -261,6 +279,14 @@
 		box-shadow: 0 0 toRem(12) 0 rgba(32, 181, 38, 0.32);
 		border: toRem(1) solid $successDark;
 		// outline: toRem(1) solid $successDark;
+
+		.catalog & {
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			border-radius: toRem(8);
+		}
 	}
 	&--big {
 		@media (min-width: toEm(580)) {
@@ -351,6 +377,10 @@
 					background-color: #1757a0;
 				}
 			}
+		}
+		&--out {
+			background-color: $grey9;
+			color: $white;
 		}
 	}
 	// .products-item__actions
@@ -913,6 +943,9 @@
 .breadcrumbs {
 	background-color: $grey9;
 	position: relative;
+	&--margin {
+		@include adaptiveValue("margin-bottom", 32, 20);
+	}
 	// .breadcrumbs__container
 	&__container {
 	}
@@ -969,6 +1002,67 @@
 		object-position: right;
 		@media (max-width: toEm(1290)) {
 			opacity: 0.2;
+		}
+	}
+}
+//========================================================================================================================================================
+.pages {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	// .pages__item
+	&__item {
+		color: $grey6;
+		&:first-child,
+		&:last-child {
+			border-radius: 50%;
+			overflow: hidden;
+			color: $grey9;
+			transition: all 0.3s;
+			border: toRem(1) solid $grey1;
+			@media (any-hover: hover) and (any-pointer: fine) {
+				&:hover {
+					background-color: $grey1;
+				}
+			}
+		}
+		&:first-child {
+			rotate: 90deg;
+			margin-right: toRem(12);
+		}
+		&:last-child {
+			rotate: -90deg;
+			margin-left: toRem(12);
+		}
+		@media (max-width: toEm($mobileSmall)) {
+			&:nth-child(5),
+			&:nth-child(6) {
+				display: none;
+			}
+		}
+	}
+	// .pages__link
+	&__link {
+		@include typography("M");
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: toRem(36);
+		border-radius: 50%;
+		aspect-ratio: 1;
+		transition: color 0.3s;
+		&::before {
+			font-size: toRem(7.5);
+		}
+		@media (any-hover: hover) and (any-pointer: fine) {
+			&:not(.pages__link--current):hover {
+				color: $grey9;
+			}
+		}
+		// .pages__link--current
+		&--current {
+			background-color: $success;
+			color: $white;
 		}
 	}
 }
