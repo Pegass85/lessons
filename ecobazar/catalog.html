@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/nouislider.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Catalog - Ecobazar</title>
 </head>
@@ -161,8 +161,307 @@
                             <div class="filter__body">
                                 <details open class="filter__item item-filter">
                                     <summary class="item-filter__header">All Categories</summary>
-                                    <div class="item-filter__body">123</div>
+                                    <div class="item-filter__body">
+                                        <div class="item-filter__categories categories-filter">
+                                            <label class="categories-filter__item">
+                                                <input class="categories-filter__input" type="radio"
+                                                    name="form[category]">
+                                                <span class="categories-filter__text">Fresh Fruit
+                                                    <span>(25)</span></span>
+                                            </label>
+                                            <label class="categories-filter__item">
+                                                <input class="categories-filter__input" type="radio"
+                                                    name="form[category]">
+                                                <span class="categories-filter__text">Vegetables
+                                                    <span>(150)</span></span>
+                                            </label>
+                                            <label class="categories-filter__item">
+                                                <input class="categories-filter__input" type="radio"
+                                                    name="form[category]">
+                                                <span class="categories-filter__text">Cooking <span>(85)</span></span>
+                                            </label>
+                                            <label class="categories-filter__item">
+                                                <input class="categories-filter__input" type="radio"
+                                                    name="form[category]">
+                                                <span class="categories-filter__text">Snacks <span>(15)</span></span>
+                                            </label>
+                                            <label class="categories-filter__item">
+                                                <input class="categories-filter__input" type="radio"
+                                                    name="form[category]">
+                                                <span class="categories-filter__text">Beverages <span>(15)</span></span>
+                                            </label>
+                                            <label class="categories-filter__item">
+                                                <input class="categories-filter__input" type="radio"
+                                                    name="form[category]">
+                                                <span class="categories-filter__text">Beauty & Health
+                                                    <span>(15)</span></span>
+                                            </label>
+                                            <label class="categories-filter__item">
+                                                <input class="categories-filter__input" type="radio"
+                                                    name="form[category]">
+                                                <span class="categories-filter__text">Bread & Bakery
+                                                    <span>(15)</span></span>
+                                            </label>
+                                        </div>
+                                    </div>
                                 </details>
+                                <details open class="filter__item item-filter">
+                                    <summary class="item-filter__header">Price</summary>
+                                    <div class="item-filter__body">
+                                        <div class="item-filter__price price-filter">
+                                            <div class="price-filter__slider"></div>
+                                            <div class="price-filter__info">
+                                                <div class="price-filter__label">Price:</div>
+                                                <div class="price-filter__value"></div>
+                                                <input type="hidden" name="form[price-from]" class="price-filter__from">
+                                                <input type="hidden" name="form[price-to]" class="price-filter__to">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </details>
+                                <details open class="filter__item item-filter">
+                                    <summary class="item-filter__header">Rating</summary>
+                                    <div class="item-filter__body">
+                                        <div class="item-filter__rating rating-filter">
+                                            <label class="rating-filter__item">
+                                                <input class="rating-filter__input" type="checkbox"
+                                                    name="form[rating-5]">
+                                                <div class="rating-filter__label">
+                                                    <div class="rating-filter__body">
+                                                        <div class="rating-filter__items">
+                                                            <div
+                                                                class="rating-filter__star rating-filter__star--active">
+                                                            </div>
+                                                            <div class="rating-filter__star"></div>
+                                                            <div class="rating-filter__star"></div>
+                                                            <div class="rating-filter__star"></div>
+                                                            <div class="rating-filter__star"></div>
+                                                        </div>
+                                                        <div class="rating-filter__value">5.0</div>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                            <label class="rating-filter__item">
+                                                <input class="rating-filter__input" type="checkbox"
+                                                    name="form[rating-5]">
+                                                <div class="rating-filter__label">
+                                                    <div class="rating-filter__body">
+                                                        <div class="rating-filter__items">
+                                                            <div class="rating-filter__star"></div>
+                                                            <div
+                                                                class="rating-filter__star rating-filter__star--active">
+                                                            </div>
+                                                            <div class="rating-filter__star"></div>
+                                                            <div class="rating-filter__star"></div>
+                                                            <div class="rating-filter__star"></div>
+                                                        </div>
+                                                        <div class="rating-filter__value">4.0 & up</div>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                            <label class="rating-filter__item">
+                                                <input class="rating-filter__input" type="checkbox"
+                                                    name="form[rating-5]">
+                                                <div class="rating-filter__label">
+                                                    <div class="rating-filter__body">
+                                                        <div class="rating-filter__items">
+                                                            <div class="rating-filter__star"></div>
+                                                            <div class="rating-filter__star"></div>
+                                                            <div
+                                                                class="rating-filter__star rating-filter__star--active">
+                                                            </div>
+                                                            <div class="rating-filter__star"></div>
+                                                            <div class="rating-filter__star"></div>
+                                                        </div>
+                                                        <div class="rating-filter__value">3.0 & up</div>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                            <label class="rating-filter__item">
+                                                <input class="rating-filter__input" type="checkbox"
+                                                    name="form[rating-5]">
+                                                <div class="rating-filter__label">
+                                                    <div class="rating-filter__body">
+                                                        <div class="rating-filter__items">
+                                                            <div class="rating-filter__star"></div>
+                                                            <div class="rating-filter__star"></div>
+                                                            <div class="rating-filter__star"></div>
+                                                            <div
+                                                                class="rating-filter__star rating-filter__star--active">
+                                                            </div>
+                                                            <div class="rating-filter__star"></div>
+                                                        </div>
+                                                        <div class="rating-filter__value">2.0 & up</div>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                            <label class="rating-filter__item">
+                                                <input class="rating-filter__input" type="checkbox"
+                                                    name="form[rating-5]">
+                                                <div class="rating-filter__label">
+                                                    <div class="rating-filter__body">
+                                                        <div class="rating-filter__items">
+                                                            <div class="rating-filter__star"></div>
+                                                            <div class="rating-filter__star"></div>
+                                                            <div class="rating-filter__star"></div>
+                                                            <div class="rating-filter__star "></div>
+                                                            <div
+                                                                class="rating-filter__star rating-filter__star--active">
+                                                            </div>
+                                                        </div>
+                                                        <div class="rating-filter__value">1.0 & up</div>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </details>
+                                <details open class="filter__item item-filter">
+                                    <summary class="item-filter__header">Popular Tag</summary>
+                                    <div class="item-filter__body">
+                                        <div class="item-filter__tags tags-filter">
+                                            <label class="tags-filter__item">
+                                                <input class="tags-filter__input" name="form[tags]" type="checkbox">
+                                                <span class="tags-filter__text">Healthy</span>
+                                            </label>
+                                            <label class="tags-filter__item">
+                                                <input class="tags-filter__input" name="form[tags]" type="checkbox">
+                                                <span class="tags-filter__text">Low fat</span>
+                                            </label>
+                                            <label class="tags-filter__item">
+                                                <input class="tags-filter__input" name="form[tags]" type="checkbox">
+                                                <span class="tags-filter__text">Vegetarian</span>
+                                            </label>
+                                            <label class="tags-filter__item">
+                                                <input class="tags-filter__input" name="form[tags]" type="checkbox">
+                                                <span class="tags-filter__text">Kid foods</span>
+                                            </label>
+                                            <label class="tags-filter__item">
+                                                <input class="tags-filter__input" name="form[tags]" type="checkbox">
+                                                <span class="tags-filter__text">Vitamins</span>
+                                            </label>
+                                            <label class="tags-filter__item">
+                                                <input class="tags-filter__input" name="form[tags]" type="checkbox">
+                                                <span class="tags-filter__text">Bread</span>
+                                            </label>
+                                            <label class="tags-filter__item">
+                                                <input class="tags-filter__input" name="form[tags]" type="checkbox">
+                                                <span class="tags-filter__text">Meat</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </details>
+                            </div>
+                            <a href="#" class="filter__sale-banner sale-banner-filter">
+                                <div class="sale-banner-filter__body">
+                                    <div class="sale-banner-filter__title">
+                                        <span>79%</span> Discount
+                                    </div>
+                                    <div class="sale-banner-filter__text">
+                                        <p>on your first order</p>
+                                    </div>
+                                    <div class="sale-banner-filter__link link-arrow link-arrow--icon-arrow">Shop Now
+                                    </div>
+                                </div>
+                                <img src="img/bannars/filter_bannar.jpg" class="sale-banner-filter__image" alt="Image">
+                            </a>
+                            <div class="filter__sale-products sale-products-filter">
+                                <h4 class="sale-products-filter__title">Sale Products</h4>
+                                <div class="sale-products-filter__items">
+                                    <article class="sale-products-filter__item item-products item-products--mini">
+                                        <a href="#" class="item-products__picture">
+                                            <img src="img/products/capsicum_red.jpg" class="item-products__image"
+                                                alt="Image">
+                                        </a>
+                                        <div class="item-products__body">
+                                            <div class="item-products__content">
+                                                <h3 class="item-products__title">
+                                                    <a href="#" class="item-products__link-title">Red Capsicum</a>
+                                                </h3>
+                                                <div class="item-products__prices">
+                                                    <div class="item-products__current">$32.00</div>
+                                                    <div class="item-products__old">$20.99</div>
+                                                </div>
+                                                <form action="#" class="item-products__rating rating">
+                                                    <div class="rating__items">
+                                                        <input disabled type="radio" value="5" name="rating"
+                                                            class="rating__item">
+                                                        <input disabled type="radio" value="4" name="rating"
+                                                            class="rating__item">
+                                                        <input disabled checked type="radio" value="3" name="rating"
+                                                            class="rating__item">
+                                                        <input disabled type="radio" value="2" name="rating"
+                                                            class="rating__item">
+                                                        <input disabled type="radio" value="1" name="rating"
+                                                            class="rating__item">
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </article>
+                                    <article class="sale-products-filter__item item-products item-products--mini">
+                                        <a href="#" class="item-products__picture">
+                                            <img src="img/products/cabbage.avif" class="item-products__image"
+                                                alt="Image">
+                                        </a>
+                                        <div class="item-products__body">
+                                            <div class="item-products__content">
+                                                <h3 class="item-products__title">
+                                                    <a href="#" class="item-products__link-title">Chanise Cabbage</a>
+                                                </h3>
+                                                <div class="item-products__prices">
+                                                    <div class="item-products__current">$24.99</div>
+                                                    <div class="item-products__old">$20.99</div>
+                                                </div>
+                                                <form action="#" class="item-products__rating rating">
+                                                    <div class="rating__items">
+                                                        <input disabled type="radio" value="5" name="rating"
+                                                            class="rating__item">
+                                                        <input disabled type="radio" value="4" name="rating"
+                                                            class="rating__item">
+                                                        <input disabled checked type="radio" value="3" name="rating"
+                                                            class="rating__item">
+                                                        <input disabled type="radio" value="2" name="rating"
+                                                            class="rating__item">
+                                                        <input disabled type="radio" value="1" name="rating"
+                                                            class="rating__item">
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </article>
+                                    <article class="sale-products-filter__item item-products item-products--mini">
+                                        <a href="#" class="item-products__picture">
+                                            <img src="img/products/capsicum.jpg" class="item-products__image"
+                                                alt="Image">
+                                        </a>
+                                        <div class="item-products__body">
+                                            <div class="item-products__content">
+                                                <h3 class="item-products__title">
+                                                    <a href="#" class="item-products__link-title">Green Capsicum</a>
+                                                </h3>
+                                                <div class="item-products__prices">
+                                                    <div class="item-products__current">$32.00</div>
+                                                    <div class="item-products__old">$20.99</div>
+                                                </div>
+                                                <form action="#" class="item-products__rating rating">
+                                                    <div class="rating__items">
+                                                        <input disabled type="radio" value="5" name="rating"
+                                                            class="rating__item">
+                                                        <input disabled type="radio" value="4" name="rating"
+                                                            class="rating__item">
+                                                        <input disabled checked type="radio" value="3" name="rating"
+                                                            class="rating__item">
+                                                        <input disabled type="radio" value="2" name="rating"
+                                                            class="rating__item">
+                                                        <input disabled type="radio" value="1" name="rating"
+                                                            class="rating__item">
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
                             </div>
                         </aside>
                         <div class="catalog__content">
@@ -737,7 +1036,7 @@
                 </div>
         </footer>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/nouislider.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 

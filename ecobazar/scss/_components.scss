@@ -316,6 +316,12 @@
 			aspect-ratio: 527 / 448;
 		}
 	}
+	&--mini {
+		display: flex;
+		.item-products__picture {
+			width: toRem(112);
+		}
+	}
 
 	@media (any-hover: hover) and (any-pointer: fine) {
 		&:hover {

@@ -14,6 +14,9 @@ function windowLoad() {
 	const coundown = document.querySelectorAll('[data-coundown]')
 	coundown.length ? initCoundown(coundown) : null
 
+	const priceFilter = document.querySelector('.price-filter')
+	priceFilter ? priceFilterInit() : null
+
 	dynamicAdaptHeader();
 	dynamicAdaptFilter();
 	slidersInit();
@@ -197,3 +200,25 @@ function slidersInit() {
 	}
 }
 
+function priceFilterInit() {
+	const priceFilterSlider = document.querySelector('.price-filter__slider')
+	noUiSlider.create(priceFilterSlider, {
+		start: [20, 80],
+		connect: true,
+		range: {
+			'min': 0,
+			'max': 100
+		}
+	});
+
+	const priceValue = document.querySelector('.price-filter__value')
+	let priceInputFrom = document.querySelector('.price-filter__from')
+	let priceInputTo = document.querySelector('.price-filter__to')
+
+	priceFilterSlider.noUiSlider.on('update', function (values, handle) {
+		priceValue.innerHTML = values.join(' — ')
+
+		priceInputFrom.value = values[0]
+		priceInputTo.value = values[1]
+	});
+}
